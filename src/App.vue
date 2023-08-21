@@ -5,6 +5,7 @@ import Home from "./views/Home.vue";
 import Shop from "./views/Shop.vue";
 import Subscriptions from "./views/Subscriptions.vue";
 import NotFound from "./views/NotFound.vue";
+import MobileNavigation from "./components/MobileNavigation.vue";
 export default {
   components: {
     Blogs,
@@ -13,6 +14,7 @@ export default {
     Shop,
     Subscriptions,
     NotFound,
+    MobileNavigation,
   },
 };
 </script>
@@ -20,5 +22,6 @@ export default {
 <template>
   <div>
     <router-view />
+    <MobileNavigation />
   </div>
 </template>
