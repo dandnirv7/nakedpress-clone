@@ -3,13 +3,13 @@ export default {};
 </script>
 
 <template>
-  <div
-    class="fixed bottom-0 flex flex-row items-center justify-center px-2.5 py-2 bg-white w-screen"
+  <nav
+    class="fixed bottom-0 flex flex-row items-center justify-center px-2.5 py-2 bg-white w-screen z-99"
   >
-    <div class="flex flex-row items-center justify-center gap-6">
+    <div class="flex flex-row items-center justify-center gap-x-6">
       <router-link
         to="/"
-        class="flex flex-col items-center justify-center gap-1"
+        class="flex flex-col items-center justify-center gap-1.5"
       >
         <svg
           v-if="$route.path === '/'"
@@ -35,11 +35,11 @@ export default {};
             fill="currentColor"
           ></path>
         </svg>
-        <span class="text-xs">Home</span>
+        <span class="text-[10px] text-light">Home</span>
       </router-link>
       <router-link
         to="/collections/all"
-        class="flex flex-col items-center justify-center gap-1"
+        class="flex flex-col items-center justify-center gap-1.5"
       >
         <vue-feather
           type="shopping-bag"
@@ -47,11 +47,11 @@ export default {};
           stroke-width="1.5"
           :stroke="$route.path === '/collections/all' ? 'green' : 'black'"
         ></vue-feather>
-        <span class="text-xs">Belanja</span>
+        <span class="text-[10px] text-light">Belanja</span>
       </router-link>
       <router-link
         to="/collections/langganan"
-        class="flex flex-col items-center justify-center gap-1"
+        class="flex flex-col items-center justify-center gap-1.5"
       >
         <vue-feather
           type="calendar"
@@ -59,11 +59,11 @@ export default {};
           stroke-width="1.5"
           :stroke="$route.path === '/collections/langganan' ? 'green' : 'black'"
         ></vue-feather>
-        <span class="text-xs">Langganan</span>
+        <span class="text-[10px] text-light">Langganan</span>
       </router-link>
       <router-link
         to="/blogs/homepage"
-        class="flex flex-col items-center justify-center gap-1"
+        class="flex flex-col items-center justify-center gap-1.5"
       >
         <vue-feather
           type="feather"
@@ -71,11 +71,11 @@ export default {};
           stroke-width="1.5"
           :stroke="$route.path === '/blogs/homepage' ? 'green' : 'black'"
         ></vue-feather>
-        <span class="text-xs">Blog</span>
+        <span class="text-[10px] text-light">Blog</span>
       </router-link>
       <router-link
         to="/pages/bantuan"
-        class="flex flex-col items-center justify-center gap-1"
+        class="flex flex-col items-center justify-center gap-1.5"
       >
         <svg
           class="feather"
@@ -94,8 +94,8 @@ export default {};
             :fill="$route.path === '/pages/bantuan' ? 'green' : 'black'"
           ></path>
         </svg>
-        <span class="text-xs">Bantuan</span>
+        <span class="text-[10px] text-light">Bantuan</span>
       </router-link>
     </div>
-  </div>
+  </nav>
 </template>
