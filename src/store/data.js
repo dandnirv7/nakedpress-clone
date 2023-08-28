@@ -52,6 +52,17 @@ import Weeks5 from "../assets/5-weeks.png";
 import Daily1Liter from "../assets/daily-1-liter.png";
 import Mini200ML from "../assets/mini-200ml.jpg";
 
+import Weeks5Subscriptions from "../assets/icon-5-weeks-weight-loss-challenge.png";
+import Bottle40Subscriptions from "../assets/icon-langganan-40-botol.png";
+import Detox5XSubscriptions from "../assets/icon-langganan-detox-5-kali.png";
+
+import MaagGerdJournal from "../assets/maag-gerd-journal.jpg";
+import Cholesterol5Weeks from "../assets/cholesterol-5-weeks.jpg";
+import WomensHealth5Weeks from "../assets/women_s-health-5-weeks.jpg";
+import MensHealth5Weeks from "../assets/men_s-health-5-weeks.jpg";
+
+import Bottle24 from "../assets/bottle-24.jpg";
+
 export const dailyKidsProduct = {
   subject: "NEW! Mini 200ml",
   category: [
@@ -464,6 +475,261 @@ export const faq = {
       answer:
         "Jus nakedpress aman diminum untuk anak usia 1 tahun ke atas. Baik untuk membiasakan rasa sayur sedari dini. Bisa mulai dari varian yg manis seperti sweet green, endless summer, silk.",
       isHide: true,
+    },
+  ],
+};
+
+export const faqSubscriptions = {
+  title: "FAQ",
+  description: "Pertanyaan seputar nakedpress, detox, dan cold pressed juice.",
+  subscriptionsQna: [
+    {
+      id: 1,
+      question:
+        "Karena pengiriman Paket Langganan lebih dari sekali, berarti ongkirnya bertambah dong?",
+      answer: [
+        {
+          id: 1,
+          answer:
+            "Tidak. Ongkos kirim cuma 1 kali saat pemesanan. Untuk wilayah Jakarta, harga ongkos kirim 20.000, untuk wilayah luar Jakarta (detabek) harga ongkos kirim 50.000",
+        },
+      ],
+      isHide: true,
+    },
+    {
+      id: 2,
+      question:
+        "Saya ingin langganan 24 atau 40 botol, tapi saya minta dikirim 1 paket Detox atau beberapa botol di hari pertama, sisanya saya kabarin. Apakah bisa?",
+      answer: [
+        {
+          id: 1,
+          answer:
+            "Tentu bisa. Mohon dipilih dulu 3 sampai 10 tanggal pengantaran yang ada, lalu tinggalkan catatan/ Whatsapp kami mengenai paket sisa yang belum mau dikirim.",
+        },
+        {
+          id: 2,
+          answer:
+            "Ketika ingin dikirimkan, hubungi kami maksimal jam 3 sore via Whatsapp, dan sehari sebelum tanggal pengantaran yang dipilih.",
+        },
+      ],
+      isHide: true,
+    },
+    {
+      id: 3,
+      question: "Kalau ingin mengganti tanggal pengantaran, gimana?",
+      answer: [
+        {
+          id: 1,
+          answer:
+            "Jika ingin ganti tanggal, hubungi kami maksimal jam 3 sore via Whatsapp, dan sehari sebelum tanggal pengantaran yang sebelumnya telah dipilih.",
+        },
+      ],
+      isHide: true,
+    },
+    {
+      id: 4,
+      question:
+        "Kalau ingin ganti alamat/kirim ke beberapa alamat dalam 1 tanggal, bisa gak?",
+      answer: [
+        {
+          id: 1,
+          answer:
+            "Tentu bisa. Tinggalkan catatan ketika memesan/ Whatsapp kami sebelum jam 3 sore, sehari sebelum tanggal antar. Ongkos kirim hanya sekali di 20.000 , atau jika ada yang masuk Wilayah luar Jakarta (Bodetabek), maka ongkos kirim akan dihitung 50.000.",
+        },
+      ],
+      isHide: true,
+    },
+    {
+      id: 5,
+      question:
+        "Saya ingin kombinasi antara Paket Detox dan jus satuan, gimana caranya?",
+      answer: [
+        {
+          id: 1,
+          answer:
+            "Pilih Paket Langganan 24 atau 40 botol, di sana langsung bisa dipilih kombinasi jus yang diinginkan, dengan maksimal 6 kali pengantaran untuk paket 24 botol dan maksimal 10 kali pengantaran untuk paket 40 botol.",
+        },
+      ],
+      isHide: true,
+    },
+    {
+      id: 6,
+      question:
+        "Kenapa beli Paket Langganan 40 botol lebih hemat 300.000? Padahal saya hitung gak sampai segitu.",
+      answer: [
+        {
+          id: 1,
+          answer:
+            "Perhitungan Paket Langganan 24/40 botol berdasarkan harga jus satuan, bukan harga Paket Detox. Misalnya,",
+        },
+        {
+          id: 2,
+          answer:
+            "1 harga jus satuan = 45.000, berarti, harga 40 botol jus = 40x1.800.000, harga Paket Langganan 40 botol = 1.500.000.",
+        },
+        {
+          id: 3,
+          answer:
+            "Jadi, 1.800.000 - 1.500.000 = 300.000 (Harga Paket Langganan 40 botol hemat 	300.000)",
+        },
+        {
+          id: 4,
+          answer: "Jangan lupa, ongkir cuma dihitung sekali lho!",
+        },
+      ],
+      isHide: true,
+    },
+  ],
+};
+
+export const featuredSubscriptions = {
+  title: "Featured langganan",
+  featuredList: [
+    {
+      id: 1,
+      title: "5 Weeks Weight Loss Program",
+      image: Weeks5Subscriptions,
+      altImage: "icon 5 weeks subscriptions",
+      tagline: [
+        {
+          id: 1,
+          titleTagline: "5 Paket detox, 5x antar",
+        },
+        {
+          id: 2,
+          titleTagline: "Bonus Weight Loss Journal",
+        },
+      ],
+      originalPrice: 1800000,
+      discountedPrice: 1500000,
+    },
+    {
+      id: 2,
+      title: "Langganan Detox 5x",
+      image: Detox5XSubscriptions,
+      altImage: "icon detox 5x subscriptions",
+      tagline: [
+        {
+          id: 1,
+          titleTagline: "5 Paket detox, 5x antar",
+        },
+        {
+          id: 2,
+          titleTagline: "Cukup bayar ongkir 1x",
+        },
+      ],
+      originalPrice: 1800000,
+      discountedPrice: 1500000,
+    },
+    {
+      id: 3,
+      title: "Langganan 40 Botol",
+      image: Bottle40Subscriptions,
+      altImage: "icon 40 bottle subscriptions",
+      tagline: [
+        {
+          id: 1,
+          titleTagline: "Maks. 10x antar",
+        },
+        {
+          id: 2,
+          titleTagline: "Kombinasi jus satuan & paket detox",
+        },
+      ],
+      originalPrice: 1800000,
+      discountedPrice: 1500000,
+    },
+  ],
+};
+
+export const Weeks5Programs = {
+  subject: "5 Weeks Program",
+  category: [
+    {
+      id: 1,
+      image: WeightLossProgram1,
+      title: "5 Weeks Weight Loss Program",
+      description: "5 paket detox, 5x antar | Bonus Weight Loss Journal",
+      originalPrice: 1800000,
+      discountedPrice: 1500000,
+    },
+    {
+      id: 2,
+      image: MaagGerdJournal,
+      title: "5 Weeks Maag GERD Program",
+      description: "5 paket detox, 5x antar | Bonus Maag GERD Journal",
+      originalPrice: 1800000,
+      discountedPrice: 1500000,
+    },
+    {
+      id: 3,
+      image: Cholesterol5Weeks,
+      title: "5 Weeks Cholesterol Program",
+      description: "5 paket detox, 5x antar | Bonus Cholesterol Journal",
+      originalPrice: 1800000,
+      discountedPrice: 1500000,
+    },
+    {
+      id: 4,
+      image: WomensHealth5Weeks,
+      title: "5 Weeks Women's Health Program",
+      description: "5 paket detox, 5x antar | Bonus Women's Health Journal",
+      originalPrice: 1800000,
+      discountedPrice: 1500000,
+    },
+    {
+      id: 5,
+      image: MensHealth5Weeks,
+      title: "5 Weeks Men's Health Program",
+      description: "5 paket detox, 5x antar | Bonus Men's Health Journal",
+      originalPrice: 1800000,
+      discountedPrice: 1500000,
+    },
+  ],
+};
+
+export const DetoxPrograms = {
+  subject: "Paket Detox & Satuan",
+  category: [
+    {
+      id: 1,
+      image: Bottle40,
+      title: "Langganan 40 Botol",
+      description: "Maks. 10x antar | Kombinasi jus satuan",
+      originalPrice: 1800000,
+      discountedPrice: 1500000,
+    },
+    {
+      id: 2,
+      image: Detox3X,
+      title: "Langganan Detox 3x",
+      description: "Maks. 3x antar",
+      originalPrice: 1080000,
+      discountedPrice: 950000,
+    },
+    {
+      id: 3,
+      image: Bottle24,
+      title: "Langganan 24 Botol",
+      description: "Maks. 6x antar | Kombinasi jus satuan",
+      originalPrice: 1080000,
+      discountedPrice: 950000,
+    },
+    {
+      id: 4,
+      image: Detox5X,
+      title: "Langganan Detox 5x",
+      description: "5 paket detox, 5x antar | Cukup bayar ongkir 1x",
+      originalPrice: 1800000,
+      discountedPrice: 1500000,
+    },
+    {
+      id: 5,
+      image: SubscriptionsOneLiter1,
+      title: "Langganan 1 Liter 15 Botol",
+      description: "Maks. 10x antar | Cukup bayar ongkir 1x",
+      originalPrice: 1725000,
+      discountedPrice: 1500000,
     },
   ],
 };
