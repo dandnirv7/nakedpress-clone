@@ -1,17 +1,57 @@
-import dailyKids1 from "../assets/webdailykids-01.jpg";
-import dailyKids2 from "../assets/webdailykids-02.jpg";
-import dailyKids3 from "../assets/webdailykids-03.jpg";
-import dailyKids4 from "../assets/webdailykids-04.jpg";
+import DailyKids1 from "../assets/webdailykids-01.jpg";
+import DailyKids2 from "../assets/webdailykids-02.jpg";
+import DailyKids3 from "../assets/webdailykids-03.jpg";
+import DailyKids4 from "../assets/webdailykids-04.jpg";
+import DailyKids5 from "../assets/webdailykids-05.jpg";
+import DailyKids6 from "../assets/webdailykids-06.jpg";
+import DailyKids7 from "../assets/webdailykids-07.jpg";
+import DailyKids8 from "../assets/webdailykids-08.jpg";
+import DailyKids9 from "../assets/webdailykids-09.jpg";
+import DailyKids10 from "../assets/webdailykids-10.jpg";
+import DailyKids11 from "../assets/webdailykids-11.jpg";
+import DailyKids12 from "../assets/webdailykids-12.jpg";
 
-import DetoxLowCalory from "../assets/detox-low-calorie.jpg";
 import DetoxMaagGerd from "../assets/detox-maag-gerd.jpg";
 import DetoxOriginal from "../assets/detox-original.jpg";
-import DetoxWomenHealth from "../assets/detox-women-health.jpg";
+import DetoxLowCalory from "../assets/detox-low-calorie.jpg";
+import DetoxWomenHealth from "../assets/detox-women_s-health.jpg";
+import DetoxMenHealth from "../assets/detox-men_s-health.jpg";
 
 import EndlessSummer from "../assets/endless-summer.jpg";
 import GreenGrenade from "../assets/green-grenade.jpg";
 import Rainforest from "../assets/rainforest.jpg";
 import Silk from "../assets/silk.jpg";
+import SweetGreen from "../assets/sweet-green.jpg";
+import FirstKiss from "../assets/first-kiss.jpg";
+import Celery from "../assets/celery.jpg";
+import GreenFairy from "../assets/green-fairy.jpg";
+import WildFlower from "../assets/wild-flower.jpg";
+import SummerPassion from "../assets/summer-passion.jpg";
+import KurmaSeedGranola from "../assets/kurma-seed-granola.jpg";
+
+import DailyRainForest from "../assets/daily-product-rain-forest.jpg";
+import DailyGreenGrenade from "../assets/daily-product-green-grenade.jpg";
+import DailyMansaMusa from "../assets/daily-product-mansa-musa.jpg";
+import DailyGreenFairy from "../assets/daily-product-green-fairy.jpg";
+import DailySweetGreen from "../assets/daily-product-sweet-green.jpg";
+import DailyLeanGreen from "../assets/daily-product-lean-green.jpg";
+import DailyPureGreen from "../assets/daily-product-pure-green.jpg";
+import DailyCeleryJuice from "../assets/daily-product-celery.jpg";
+import DailyCaraMia from "../assets/daily-product-cara-mia.jpg";
+import DailySkinnyDip from "../assets/daily-product-skinny-dip.jpg";
+import DailyUripUrup from "../assets/daily-product-urip-urup.jpg";
+import DailyEndlessSummer from "../assets/daily-product-endless-summer.jpg";
+import DailyBlondie from "../assets/daily-product-blondie.jpg";
+import DailySummerPassion from "../assets/daily-product-summer-passion.jpg";
+import DailyFirstKiss from "../assets/daily-product-heart-beet.jpg";
+import DailyRedEarth from "../assets/daily-product-heart-beet.jpg";
+import DailySilk from "../assets/daily-product-silk.jpg";
+import DailyJade from "../assets/daily-product-jade.jpg";
+import DailySunrise from "../assets/daily-product-sunrise.jpg";
+import DailyMoonlight from "../assets/daily-product-moonlight.jpg";
+
+import CoolerBag from "../assets/cooler-bag.jpg";
+import Journal from "../assets/journal-web.jpg";
 
 import Detox3X from "../assets/detox-3x.jpg";
 import Detox5X from "../assets/detox-5x.jpg";
@@ -36,6 +76,8 @@ import BlogInspiration1 from "../assets/blog-inspiration-01.jpg";
 import BlogInspiration2 from "../assets/blog-inspiration-02.jpg";
 import BlogInspiration3 from "../assets/blog-inspiration-03.jpg";
 import BlogInspiration4 from "../assets/blog-inspiration-04.jpg";
+import BlogInspiration5 from "../assets/articles/cover-blog.jpg";
+import BlogInspiration6 from "../assets/articles/Regita.jpg";
 
 import Detox from "../assets/detox.png";
 import WeightLoss from "../assets/weight-loss.png";
@@ -68,7 +110,7 @@ export const dailyKidsProduct = {
   category: [
     {
       id: 1,
-      image: dailyKids2,
+      image: DailyKids2,
       title: "Mini Box Set + Buku  Anak",
       description: "9 botol jus sayuran 200ml + Buku Cerita Anak",
       originalPrice: 414000,
@@ -76,7 +118,7 @@ export const dailyKidsProduct = {
     },
     {
       id: 2,
-      image: dailyKids1,
+      image: DailyKids1,
       title: "Mini Box 200ml",
       description: "9 botol jus sayuran 200ml",
       originalPrice: 315000,
@@ -84,7 +126,7 @@ export const dailyKidsProduct = {
     },
     {
       id: 3,
-      image: dailyKids3,
+      image: DailyKids3,
       title: "Pelangi di Piringmu",
       description: "Buku anak untuk belajar pentingnya sayuran",
       originalPrice: 99000,
@@ -92,16 +134,236 @@ export const dailyKidsProduct = {
     },
     {
       id: 4,
-      image: dailyKids4,
+      image: DailyKids4,
       title: "Sweet Green 200ml",
       description: "Menguatkan sistem imun & pencernaan",
       originalPrice: 35000,
+    },
+    {
+      id: 5,
+      image: DailyKids5,
+      title: "Green Fairy 200ml",
+      description: "Mengatasi masalah pencernaan",
+      originalPrice: 35000,
+    },
+    {
+      id: 6,
+      image: DailyKids6,
+      title: "Rainforest 200ml",
+      description: "Baik untuk masalah Asam Lambung & Sembelit",
+      originalPrice: 35000,
+    },
+    {
+      id: 7,
+      image: DailyKids7,
+      title: "Green Grenade 200ml",
+      description: "Bantu turunkan berat badan & Diabetes",
+      originalPrice: 35000,
+    },
+    {
+      id: 8,
+      image: DailyKids8,
+      title: "Endless Summer 200ml",
+      description: "Untuk kesehatan kulit & mata",
+      originalPrice: 35000,
+    },
+    {
+      id: 9,
+      image: DailyKids9,
+      title: "Wild Flower 200ml",
+      description: "Baik untuk PCOS & mens bermasalah",
+      originalPrice: 35000,
+    },
+    {
+      id: 10,
+      image: DailyKids10,
+      title: "First Kiss 200ml",
+      description: "Cocok diminum setelah olahraga",
+      originalPrice: 35000,
+    },
+    {
+      id: 11,
+      image: DailyKids11,
+      title: "Summer Passion 200ml",
+      description: "Baik untuk kolesterol & asam urat tinggi",
+      originalPrice: 35000,
+    },
+    {
+      id: 12,
+      image: DailyKids12,
+      title: "Silk 200ml",
+      description: "Bagus diminum setelah olahraga & atasi insomnia",
+      originalPrice: 35000,
+    },
+  ],
+};
+export const dailyProduct330 = {
+  subject: "Daily 330ml",
+  category: [
+    {
+      id: 1,
+      image: DailyRainForest,
+      title: "Rainforest",
+      description: "Jus sayur dengan chia seed yang mengenyangkan",
+      originalPrice: 45000,
+    },
+    {
+      id: 2,
+      image: DailyGreenGrenade,
+      title: "Green Grenade",
+      description: "Jus hijau 6 sayur",
+      originalPrice: 45000,
+    },
+    {
+      id: 3,
+      image: DailyMansaMusa,
+      title: "Mansa Musa",
+      description: "Jus sayur untuk berbuka puasa",
+      originalPrice: 45000,
+    },
+    {
+      id: 4,
+      image: DailyGreenFairy,
+      title: "Green Fairy",
+      description: "Jus sayur manis aman untuk maag",
+      originalPrice: 45000,
+    },
+    {
+      id: 5,
+      image: DailySweetGreen,
+      title: "Sweet Green",
+      description: "Jus sayur hijau favorit",
+      originalPrice: 45000,
+    },
+    {
+      id: 6,
+      image: DailyLeanGreen,
+      title: "Lean Green",
+      description: "Jus sayur hijau pemula",
+      originalPrice: 45000,
+    },
+    {
+      id: 7,
+      image: DailyPureGreen,
+      title: "Pure Green",
+      description: "Jus untuk pencinta sayur",
+      originalPrice: 45000,
+    },
+    {
+      id: 8,
+      image: DailyCeleryJuice,
+      title: "Celery Juice",
+      description: "Jus 100% seledri murni",
+      originalPrice: 45000,
+    },
+    {
+      id: 9,
+      image: DailyCaraMia,
+      title: "Cara Mia",
+      description: "Jus lemon manis kesayangan",
+      originalPrice: 45000,
+    },
+    {
+      id: 10,
+      image: DailySkinnyDip,
+      title: "Skinny Dip",
+      description: "Jus lemon penuh vitamin",
+      originalPrice: 45000,
+    },
+    {
+      id: 11,
+      image: DailyUripUrup,
+      title: "Jamu Urip Urup",
+      description: "Jamu kunyit asam untuk sistem imun",
+      originalPrice: 45000,
+    },
+    {
+      id: 12,
+      image: DailyEndlessSummer,
+      title: "Endless Summer",
+      description: "Jus wortel favorit",
+      originalPrice: 45000,
+    },
+    {
+      id: 13,
+      image: DailyBlondie,
+      title: "Blondie",
+      description: "Jus wortel dan melon rendah kalori",
+      originalPrice: 45000,
+    },
+    {
+      id: 13,
+      image: DailySummerPassion,
+      title: "SummerPassion",
+      description: "Jus buah bit untuk pemula",
+      originalPrice: 45000,
+    },
+    {
+      id: 14,
+      image: DailyFirstKiss,
+      title: "First Kiss",
+      description: "Merah Manis Segar",
+      originalPrice: 45000,
+    },
+    {
+      id: 15,
+      image: DailyRedEarth,
+      title: "Red Earth",
+      description: "Jus bit tinggi antioksidan",
+      originalPrice: 45000,
+    },
+    {
+      id: 16,
+      image: DailySilk,
+      title: "Silk",
+      description: "Susu kacang mede vanila",
+      originalPrice: 45000,
+    },
+    {
+      id: 17,
+      image: DailyJade,
+      title: "Jade",
+      description: "Susu kacang mede pandan",
+      originalPrice: 45000,
+    },
+    {
+      id: 18,
+      image: DailySunrise,
+      title: "Sunrise",
+      description: "Susu kacang mede Thai Tea",
+      originalPrice: 45000,
+    },
+    {
+      id: 19,
+      image: DailyMoonlight,
+      title: "Moonlight",
+      description: "Susu oat yang mengenyangkan",
+      originalPrice: 45000,
+    },
+  ],
+};
+
+export const merchandise = {
+  subject: "Merchandises",
+  category: [
+    {
+      id: 1,
+      image: CoolerBag,
+      title: "Cooler Bag",
+      description: "Menjaga jus tetap dingin",
+      originalPrice: 25000,
+    },
+    {
+      id: 2,
+      image: Journal,
+      title: "Jurnal 2023",
+      description: "Jurnal untuk rencana 2023",
+      originalPrice: 100000,
     },
   ],
 };
 
 export const detoxProduct = {
-  subject: "Best Seller Detox",
   category: [
     {
       id: 1,
@@ -131,6 +393,14 @@ export const detoxProduct = {
       title: "Detox Women's Health",
       description:
         "Untuk kesehatan hormon wanita - Mens, PCOS, Kista, Miom & Promil",
+      originalPrice: 320000,
+    },
+    {
+      id: 5,
+      image: DetoxMenHealth,
+      title: "Detox Men's Health",
+      description:
+        "Membantu pria atasi Kolesterol, Hipertensi, Obesitas, Perut buncit",
       originalPrice: 320000,
     },
   ],
@@ -166,6 +436,55 @@ export const oneLiterProduct = {
       title: "Silk 1 Liter",
       description: "Bagus diminum setelah olahraga & atasi insomnia",
       originalPrice: 115000,
+    },
+    {
+      id: 5,
+      image: SweetGreen,
+      title: "Sweet Green 1 Liter",
+      description: "Menguatkan sistem imun & pencernaan",
+      originalPrice: 115000,
+    },
+    {
+      id: 6,
+      image: FirstKiss,
+      title: "First Kiss 1 Liter",
+      description: "Cocok diminum setelah olahraga",
+      originalPrice: 115000,
+    },
+    {
+      id: 7,
+      image: Celery,
+      title: "Celery 1 Liter",
+      description: "Bantu proses detoksifikasi tubuh & masalah jerawat",
+      originalPrice: 115000,
+    },
+    {
+      id: 8,
+      image: GreenFairy,
+      title: "Green Fairy 1 Liter",
+      description: "Mengatasi masalah pencernaan",
+      originalPrice: 115000,
+    },
+    {
+      id: 9,
+      image: WildFlower,
+      title: "Wild Flower 1 Liter",
+      description: "Baik untuk PCOS & mens bermasalah",
+      originalPrice: 115000,
+    },
+    {
+      id: 10,
+      image: SummerPassion,
+      title: "Summer Passion 1 Liter",
+      description: "Baik untuk kolesterol & asam urat tinggi",
+      originalPrice: 115000,
+    },
+    {
+      id: 11,
+      image: KurmaSeedGranola,
+      title: "Kurma Seed Granola 400 gram",
+      description: "Oat kaya serat yang bikin kenyang lama saat puasa",
+      originalPrice: 45000,
     },
   ],
 };
@@ -290,19 +609,40 @@ export const messageProcedure = [
 export const blogInspiration = [
   {
     id: 1,
+    title: "Konstipasi. Bahaya atau Enggak?",
     image: BlogInspiration1,
+    date: "09 Aug 2023",
   },
   {
     id: 2,
+    title:
+      "Nadiyah, Akhirnya Perjuanganku Melawan GERD Dari Kecil Berakhir Setelah Detox",
     image: BlogInspiration2,
+    date: "20 Mar 2023",
   },
   {
     id: 3,
+    title: "Meilyana, Kirain  Asam Lambung Biasa. Gak Taunya GERD",
     image: BlogInspiration3,
+    date: "20 Mar 2023",
   },
   {
     id: 4,
+    title: "Sasa, Setiap Bulan Selalu Ngerasain Drama PMS",
     image: BlogInspiration4,
+    date: "20 Mar 2023",
+  },
+  {
+    id: 5,
+    title: "Diya, Ada Asam Lambung Bukan Berarti Gak Bisa Ibadah Puasa",
+    image: BlogInspiration5,
+    date: "17 Mar 2023",
+  },
+  {
+    id: 6,
+    title: "Regita, GERD Kambuh Terus, Sampai Gak Mempan Diobatin Pake Obat",
+    image: BlogInspiration6,
+    date: "13 Mar 2023",
   },
 ];
 
@@ -474,6 +814,19 @@ export const faq = {
       question: "Apakah jusnya aman dikonsumsi anak-anak?",
       answer:
         "Jus nakedpress aman diminum untuk anak usia 1 tahun ke atas. Baik untuk membiasakan rasa sayur sedari dini. Bisa mulai dari varian yg manis seperti sweet green, endless summer, silk.",
+      isHide: true,
+    },
+  ],
+};
+
+export const faqStoreLocation = {
+  title: "Lokasi Toko",
+  locationQna: [
+    {
+      id: 1,
+      question: "Mall Kota Kasablanka",
+      answer:
+        "Lantai LG (Depan Shihlin) 0817762533, Setiap Hari 10.00 - 22.00 WIB",
       isHide: true,
     },
   ],

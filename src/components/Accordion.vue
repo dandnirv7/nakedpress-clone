@@ -1,7 +1,12 @@
 <script>
 import { TransitionGroup } from "vue";
 
-import { useDeliveryAreaStore, useFaqStore } from "../store";
+import {
+  useDeliveryAreaStore,
+  useFaqStore,
+  useFaqSubscriptionsStore,
+  useFaqStoreLocationStore,
+} from "../store";
 export default {
   components: {
     TransitionGroup,
@@ -21,6 +26,10 @@ export default {
         return useFaqStore().faq;
       } else if (this.storeType === "delivery") {
         return useDeliveryAreaStore().deliveryArea;
+      } else if (this.storeType === "subscriptions") {
+        return useFaqSubscriptionsStore().faqSubscriptions;
+      } else if (this.storeType === "location") {
+        return useFaqStoreLocationStore().faqStoreLocation;
       }
       return null;
     },
@@ -29,10 +38,15 @@ export default {
         return "qna";
       } else if (this.storeType === "delivery") {
         return "area";
+      } else if (this.storeType === "subscriptions") {
+        return "subscriptionsQna";
+      } else if (this.storeType === "location") {
+        return "locationQna";
       }
       return "";
     },
   },
+
   methods: {
     toggleHide(item) {
       item.isHide = !item.isHide;
@@ -42,6 +56,10 @@ export default {
         return item.question;
       } else if (this.storeType === "delivery") {
         return item.city;
+      } else if (this.storeType === "subscriptions") {
+        return item.question;
+      } else if (this.storeType === "location") {
+        return item.question;
       }
       return "";
     },
@@ -50,6 +68,12 @@ export default {
         return item.answer;
       } else if (this.storeType === "delivery") {
         return item.subdistrict;
+      } else if (this.storeType === "subscriptions") {
+        return item.answer.map((answer) => {
+          return answer.answer;
+        });
+      } else if (this.storeType === "location") {
+        return item.answer;
       }
       return "";
     },
@@ -59,30 +83,46 @@ export default {
 
 <template>
   <div class="px-5 mb-10">
-    <h1 class="text-[1.75rem] leading-7 font-bold mb-3">
+    <h1 class="text-[1.75rem] leading-10 font-bold mb-3">
       {{ title }}
     </h1>
-    <p v-if="description">{{ description }}</p>
+    <p v-if="description" class="mb-10 text-lg font-light">
+      {{ description }}
+    </p>
     <TransitionGroup name="fade" tag="article">
       <article
         v-for="item in items[arrayKey]"
         :key="item.id"
-        class="border-b mb-2 hover:border-[#2f8d03] w-full h-full"
+        class="border-b mb-2 hover:border-[#2f8d03] w-full h-full pb-3"
       >
         <div @click="toggleHide(item)">
-          <div class="flex flex-row items-center justify-between pb-4">
-            <h3 class="text-[#2f8d03] font-semibold">
+          <div class="flex flex-row items-center justify-between">
+            <h3
+              class="font-semibold"
+              :class="{
+                'text-[#2f8d03]': storeType !== 'faq' || !item.isHide,
+              }"
+            >
               {{ getItemTitle(item) }}
             </h3>
+
             <vue-feather
               :type="item.isHide ? 'plus' : 'minus'"
               stroke="#2f8d03"
             ></vue-feather>
           </div>
-          <div class="pb-4" v-if="!item.isHide">
-            <p>
-              {{ getItemDescription(item) }}
-            </p>
+          <div class="my-3" v-if="!item.isHide">
+            <div v-if="storeType === 'subscriptions'">
+              <template
+                v-for="answerItem in getItemDescription(item)"
+                :key="answerItem.id"
+              >
+                <p class="font-light mt-2">{{ answerItem }}</p>
+              </template>
+            </div>
+            <div v-else>
+              <p class="font-light">{{ getItemDescription(item) }}</p>
+            </div>
           </div>
         </div>
       </article>
