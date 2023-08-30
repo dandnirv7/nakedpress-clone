@@ -25,7 +25,7 @@ onMounted(() => {
 const { category: dailyKidsCategory, subject: dailyKidsSubject } = toRefs(
   dailyKidsProductStore.dailyKidsProduct
 );
-const { category: detoxProductCategory, subject: detoxProductSubject } = toRefs(
+const { category: detoxProductCategory } = toRefs(
   detoxProductStore.detoxProduct
 );
 const { category: oneLiterProductCategory, subject: oneLiterProductSubject } =
@@ -37,15 +37,15 @@ const {
 } = toRefs(subscriptionsStore.subscriptions);
 const subscriptionsOneLiter = subscriptionsOneLiterStore.subscriptionsOneLiter;
 const weightLossProgram = weightLossProgramStore.weightLossProgram;
-
-const formatPrice = (price) => {
-  return `Rp ${price.toLocaleString("id-ID")}`;
-};
+const detoxProductSubject = "Best Sellers Detox";
 </script>
 
 <template>
   <div class="py-14">
-    <ProductItems :subject="dailyKidsSubject" :products="dailyKidsCategory" />
+    <ProductItems
+      :subject="dailyKidsSubject"
+      :products="dailyKidsCategory.slice(0, 4)"
+    />
     <ProductItems
       :subject="detoxProductSubject"
       :products="detoxProductCategory"
@@ -56,7 +56,7 @@ const formatPrice = (price) => {
     <div class="mt-10">
       <ProductItems
         :subject="oneLiterProductSubject"
-        :products="oneLiterProductCategory"
+        :products="oneLiterProductCategory.slice(0, 4)"
         class="mb-5"
       />
       <router-link to="/collections/all/" class="px-5">
@@ -73,6 +73,7 @@ const formatPrice = (price) => {
         :description="subscriptionsDescription"
         :products="subscriptionsCategory"
         :textColor="'text-black'"
+        :buttonText="'Pilih'"
         class="mb-5"
       />
       <router-link to="/collections/langganan/" class="px-5">
