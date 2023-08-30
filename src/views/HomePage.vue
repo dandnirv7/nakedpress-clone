@@ -69,7 +69,5 @@ export default {
     <Accordion :storeType="'delivery'" title="Area Pengantaran" />
     <StoreLocation />
     <Accordion :storeType="'faq'" title="FAQ" />
-    <Download />
-    <Footer />
   </div>
 </template>

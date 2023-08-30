@@ -1,10 +1,10 @@
 import { createWebHistory, createRouter } from "vue-router";
 import BlogsPage from "../views/BlogsPage.vue";
 import HelpPage from "../views/HelpPage.vue";
-import Home from "../views/Home.vue";
+import HomePage from "../views/HomePage.vue";
 import ShoppingPage from "../views/ShoppingPage.vue";
 import SubscriptionsPage from "../views/SubscriptionsPage.vue";
-import NotFound from "../views/NotFound.vue";
+import NotFoundPage from "../views/NotFoundPage.vue";
 import LoginPage from "../views/LoginPage.vue";
 import ForgotPasswordPage from "../views/ForgotPasswordPage.vue";
 import RegisterPage from "../views/RegisterPage.vue";
@@ -12,8 +12,8 @@ import RegisterPage from "../views/RegisterPage.vue";
 const routes = [
   {
     path: "/",
-    name: Home,
-    component: () => import("../views/Home.vue"),
+    name: HomePage,
+    component: () => import("../views/HomePage.vue"),
     meta: {
       title: "Detox Cold Pressed Juice - nakedpress | Jakarta",
     },
@@ -81,8 +81,11 @@ const router = createRouter({
   routes: routes.concat([
     {
       path: "/:pathMatch(.*)*",
-      name: "NotFound",
-      component: NotFound,
+      name: "NotFoundPage",
+      component: NotFoundPage,
+      meta: {
+        title: "404 Tidak Ditemukan - nakedpress",
+      },
     },
   ]),
 });

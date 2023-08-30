@@ -1,24 +1,28 @@
 <script>
-import Blogs from "./views/Blogs.vue";
-import Help from "./views/Help.vue";
-import Home from "./views/Home.vue";
-import Shop from "./views/Shop.vue";
-import Subscriptions from "./views/Subscriptions.vue";
-import NotFound from "./views/NotFound.vue";
+import BlogsPage from "./views/BlogsPage.vue";
+import HelpPage from "./views/HelpPage.vue";
+import HomePage from "./views/HomePage.vue";
+import ShopPage from "./views/ShoppingPage.vue";
+import SubscriptionsPage from "./views/SubscriptionsPage.vue";
+import NotFoundPage from "./views/NotFoundPage.vue";
 import MobileNavigation from "./components/MobileNavigation.vue";
 import Announcement from "./components/Announcement.vue";
 import Navbar from "./components/Navbar.vue";
+import Download from "./components/Download.vue";
+import Footer from "./components/Footer.vue";
 export default {
   components: {
-    Blogs,
-    Help,
-    Home,
-    Shop,
-    Subscriptions,
-    NotFound,
+    BlogsPage,
+    HelpPage,
+    HomePage,
+    ShopPage,
+    SubscriptionsPage,
+    NotFoundPage,
     MobileNavigation,
     Announcement,
     Navbar,
+    Download,
+    Footer,
   },
 };
 </script>
@@ -28,6 +32,8 @@ export default {
     <Navbar />
     <!-- <Announcement /> -->
     <router-view />
+    <Download />
+    <Footer />
     <MobileNavigation />
   </div>
 </template>
