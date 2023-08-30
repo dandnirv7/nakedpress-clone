@@ -14,6 +14,13 @@ import {
   useSubscriptionsStore,
   useSubscriptionsOneLiterStore,
   useWeightLossProgramStore,
+  useFeaturedSubscriptionsStore,
+  useFaqSubscriptionsStore,
+  useWeek5SubscriptionsStore,
+  useDetoxSubscriptionsStore,
+  useDailyProduct330MlStore,
+  useMerchandisesStore,
+  useFaqStoreLocationStore,
 } from "./store-modules";
 
 export {
@@ -29,6 +36,13 @@ export {
   useSubscriptionsStore,
   useSubscriptionsOneLiterStore,
   useWeightLossProgramStore,
+  useFeaturedSubscriptionsStore,
+  useFaqSubscriptionsStore,
+  useWeek5SubscriptionsStore,
+  useDetoxSubscriptionsStore,
+  useDailyProduct330MlStore,
+  useMerchandisesStore,
+  useFaqStoreLocationStore,
   pinia,
 };
 
