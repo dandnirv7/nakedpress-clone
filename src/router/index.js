@@ -1,5 +1,5 @@
 import { createWebHistory, createRouter } from "vue-router";
-import Blogs from "../views/Blogs.vue";
+import BlogsPage from "../views/BlogsPage.vue";
 import HelpPage from "../views/HelpPage.vue";
 import Home from "../views/Home.vue";
 import ShoppingPage from "../views/ShoppingPage.vue";
@@ -36,8 +36,8 @@ const routes = [
   },
   {
     path: "/blogs/homepage",
-    name: Blogs,
-    component: () => import("../views/Blogs.vue"),
+    name: BlogsPage,
+    component: () => import("../views/BlogsPage.vue"),
     meta: {
       title: "Homepage - nakedpress",
     },

@@ -21,6 +21,8 @@ import {
   useDailyProduct330MlStore,
   useMerchandisesStore,
   useFaqStoreLocationStore,
+  useBlogCategoryStore,
+  useBlogArticleStore,
 } from "./store-modules";
 
 export {
@@ -43,6 +45,8 @@ export {
   useDailyProduct330MlStore,
   useMerchandisesStore,
   useFaqStoreLocationStore,
+  useBlogCategoryStore,
+  useBlogArticleStore,
   pinia,
 };
 

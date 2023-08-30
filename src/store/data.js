@@ -79,6 +79,19 @@ import BlogInspiration4 from "../assets/blog-inspiration-04.jpg";
 import BlogInspiration5 from "../assets/articles/cover-blog.jpg";
 import BlogInspiration6 from "../assets/articles/Regita.jpg";
 
+import BlogArticle2 from "../assets/articles/Article.png";
+import BlogArticle3 from "../assets/articles/cara-detox-untuk-kesehatan-pria.jpg";
+import BlogArticle4 from "../assets/articles/Putri.png";
+import BlogArticle5 from "../assets/articles/Article.png";
+import BlogArticle6 from "../assets/articles/Customer-Men_s-Health.jpg";
+
+import MaagGerdBlog from "../assets/files/category_asamlambung.png";
+import Obesitas from "../assets/files/category_obesitas.png";
+import Menstruasi from "../assets/files/category_menstruasi.png";
+import Autoimun from "../assets/files/category_autoimune.png";
+import Promil from "../assets/files/category_promil.png";
+import Kolesterol from "../assets/files/category_hipertensi.png";
+
 import Detox from "../assets/detox.png";
 import WeightLoss from "../assets/weight-loss.png";
 import MaagGerd from "../assets/maag-gerd.png";
@@ -611,6 +624,7 @@ export const blogInspiration = [
     id: 1,
     title: "Konstipasi. Bahaya atau Enggak?",
     image: BlogInspiration1,
+    alt: "Konstipasi",
     date: "09 Aug 2023",
   },
   {
@@ -618,31 +632,115 @@ export const blogInspiration = [
     title:
       "Nadiyah, Akhirnya Perjuanganku Melawan GERD Dari Kecil Berakhir Setelah Detox",
     image: BlogInspiration2,
+    alt: "Nadiyah",
     date: "20 Mar 2023",
   },
   {
     id: 3,
     title: "Meilyana, Kirain  Asam Lambung Biasa. Gak Taunya GERD",
     image: BlogInspiration3,
+    alt: "Meilyana",
     date: "20 Mar 2023",
   },
   {
     id: 4,
     title: "Sasa, Setiap Bulan Selalu Ngerasain Drama PMS",
     image: BlogInspiration4,
+    alt: "Sasa",
     date: "20 Mar 2023",
   },
   {
     id: 5,
     title: "Diya, Ada Asam Lambung Bukan Berarti Gak Bisa Ibadah Puasa",
     image: BlogInspiration5,
+    alt: "Diya",
     date: "17 Mar 2023",
   },
   {
     id: 6,
     title: "Regita, GERD Kambuh Terus, Sampai Gak Mempan Diobatin Pake Obat",
     image: BlogInspiration6,
+    alt: "Regita",
     date: "13 Mar 2023",
+  },
+];
+
+export const blogArticle = [
+  {
+    id: 1,
+    title: "Konstipasi. Bahaya atau Enggak?",
+    image: BlogInspiration1,
+    date: "09 Aug 2023",
+  },
+  {
+    id: 2,
+    title: "Susah BAB Bisa Bikin Masalah Kesehatan Yang Lebih Banyak",
+    image: BlogArticle2,
+    date: "09 Aug 2023",
+  },
+  {
+    id: 3,
+    title: "Cara Pakai Paket Detox Biar Kesehatan Pria Meningkat",
+    image: BlogArticle3,
+    date: "24 Jul 2023",
+  },
+  {
+    id: 4,
+    title:
+      "Putri, Semenjak Minum Jus Sayuran Setiap Hari, BAB Aku Lancar Kembali",
+    image: BlogArticle4,
+    date: "03 Jul 2023",
+  },
+  {
+    id: 5,
+    title: "Makin Tua Makin Susah Turun Berat Badan. Mitos atau Fakta?",
+    image: BlogArticle5,
+    date: "12 Jun 2023",
+  },
+  {
+    id: 6,
+    title: "Adit, Dulu Sering Jajan Sembarangan Bikin sakit Kepala.",
+    image: BlogArticle6,
+    date: "05 Jun 2023",
+  },
+];
+
+export const blogCategory = [
+  {
+    id: 1,
+    title: "Maag GERD",
+    image: MaagGerdBlog,
+    alt: "Maag GERD",
+  },
+  {
+    id: 2,
+    title: "Obesitas",
+    image: Obesitas,
+    alt: "Obesitas",
+  },
+  {
+    id: 3,
+    title: "Menstruasi",
+    image: Menstruasi,
+    alt: "Menstruasi",
+  },
+  {
+    id: 4,
+    title: "Autoimun",
+    image: Autoimun,
+    alt: "Autoimun",
+  },
+  {
+    id: 5,
+    title: "Promil",
+    image: Promil,
+    alt: "Promil",
+  },
+  {
+    id: 6,
+    title: "Kolesterol",
+    image: Kolesterol,
+    alt: "Kolesterol",
   },
 ];
 

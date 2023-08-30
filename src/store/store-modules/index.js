@@ -17,3 +17,5 @@ export { useDetoxSubscriptionsStore } from "../detoxSubscriptions";
 export { useDailyProduct330MlStore } from "../dailyProduct330";
 export { useMerchandisesStore } from "../merchandises";
 export { useFaqStoreLocationStore } from "../faqStoreLocation";
+export { useBlogCategoryStore } from "../blogCategory";
+export { useBlogArticleStore } from "../blogArticle";
