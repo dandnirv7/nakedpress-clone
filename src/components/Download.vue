@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="px-5">
     <div
       class="bg-[#ecf7cf] rounded-xl p-5 flex flex-col justify-center items-center gap-y-4"
     >

@@ -11,6 +11,18 @@ export default {
       type: String,
       default: "text-[#2f8d03]",
     },
+    buttonText: {
+      type: String,
+      default: "Beli",
+    },
+    productId: {
+      type: String,
+      required: false,
+    },
+    subject: {
+      type: String,
+      required: false,
+    },
   },
   methods: {
     formatPrice(price) {
@@ -21,13 +33,15 @@ export default {
 </script>
 
 <template>
-  <div class="px-5">
-    <h2 class="text-[1.75rem] font-bold">{{ subject }}</h2>
+  <section class="px-5" :id="productId">
+    <h2 class="text-[1.75rem] leading-9 font-bold scroll-mt-20">
+      {{ subject }}
+    </h2>
     <p class="font-thin">{{ description }}</p>
     <div
       v-for="product in products"
       :key="product.id"
-      class="flex flex-row items-center pr-4 mt-4"
+      class="flex flex-row items-center pt-5 pr-4"
     >
       <div>
         <img
@@ -46,11 +60,6 @@ export default {
         <p class="font-light">{{ product.description }}</p>
         <div class="flex flex-row items-center justify-center pr-2.5 gap-x-2">
           <div>
-            <p :class="{ 'line-through': product.discountedPrice }">
-              {{
-                product.originalPrice ? formatPrice(product.originalPrice) : ""
-              }}
-            </p>
             <p class="text-red-900">
               {{
                 product.discountedPrice
@@ -58,12 +67,17 @@ export default {
                   : ""
               }}
             </p>
+            <p :class="{ 'line-through': product.discountedPrice }">
+              {{
+                product.originalPrice ? formatPrice(product.originalPrice) : ""
+              }}
+            </p>
           </div>
           <button class="py-1 text-white bg-[#2f8d03] px-7 rounded-2xl">
-            Beli
+            {{ buttonText }}
           </button>
         </div>
       </div>
     </div>
-  </div>
+  </section>
 </template>
