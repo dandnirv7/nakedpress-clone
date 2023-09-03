@@ -1,31 +1,9 @@
 import { createPinia } from "pinia";
 const pinia = createPinia();
 
-import {
-  useBlogInspirationStore,
-  useDailyKidsProductStore,
-  useDeliveryAreaStore,
-  useDetoxProductStore,
-  useFaqStore,
-  useMessageProcedureStore,
-  useOneLiterProductStore,
-  useShopCategoryStore,
-  useShopNeedStore,
-  useSubscriptionsStore,
-  useSubscriptionsOneLiterStore,
-  useWeightLossProgramStore,
-  useFeaturedSubscriptionsStore,
-  useFaqSubscriptionsStore,
-  useWeek5SubscriptionsStore,
-  useDetoxSubscriptionsStore,
-  useDailyProduct330MlStore,
-  useMerchandisesStore,
-  useFaqStoreLocationStore,
-  useBlogCategoryStore,
-  useBlogArticleStore,
-} from "./store-modules";
+import * as storeModules from "./store-modules";
 
-export {
+export const {
   useBlogInspirationStore,
   useDailyKidsProductStore,
   useDeliveryAreaStore,
@@ -47,7 +25,16 @@ export {
   useFaqStoreLocationStore,
   useBlogCategoryStore,
   useBlogArticleStore,
-  pinia,
-};
+  useMaagGerdBlogStore,
+  useObesitasBlogStore,
+  useMenstruationBlogStore,
+  useAutoimmuneBlogStore,
+  usePromilBlogStore,
+  useCholesterolBlogStore,
+  usePaginationStore,
+  useStoreBlogStore,
+} = storeModules;
+
+export { pinia };
 
 export default pinia;
