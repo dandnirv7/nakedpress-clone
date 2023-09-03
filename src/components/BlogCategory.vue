@@ -22,7 +22,7 @@ export default {
         class="flex flex-col items-center"
       >
         <router-link
-          to="/blogs/stories/tagged"
+          :to="'/blogs/stories/tagged/' + category.id"
           class="flex flex-col items-center space-y-2 w-20"
         >
           <div class="w-16">
