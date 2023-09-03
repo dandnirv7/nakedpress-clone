@@ -19,3 +19,5 @@ export { useMerchandisesStore } from "../merchandises";
 export { useFaqStoreLocationStore } from "../faqStoreLocation";
 export { useBlogCategoryStore } from "../blogCategory";
 export { useBlogArticleStore } from "../blogArticle";
+export { usePaginationStore } from "../pagination";
+export { useStoreBlogStore } from "../storeBlog";
