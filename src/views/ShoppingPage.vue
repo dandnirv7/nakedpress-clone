@@ -77,12 +77,12 @@ const handleScroll = () => {
 
   if (currentScrollY > lastScrollY) {
     stickyHeader.style.position = "fixed";
-    stickyHeader.style.top = "0"; // Set top to 0
+    stickyHeader.style.top = "0";
     stickyHeader.style.right = "0";
     stickyHeader.style.left = "0";
     stickyHeader.style.zIndex = "99";
   } else {
-    stickyHeader.style.position = "static"; // Use "static" for non-fixed positioning
+    stickyHeader.style.position = "static";
   }
 };
 </script>
