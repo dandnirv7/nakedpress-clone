@@ -707,37 +707,37 @@ export const blogArticle = [
 
 export const blogCategory = [
   {
-    id: 1,
+    id: "blog-maaggerd",
     title: "Maag GERD",
     image: MaagGerdBlog,
     alt: "Maag GERD",
   },
   {
-    id: 2,
+    id: "blog-obesitas",
     title: "Obesitas",
     image: Obesitas,
     alt: "Obesitas",
   },
   {
-    id: 3,
+    id: "blog-menstruasi",
     title: "Menstruasi",
     image: Menstruasi,
     alt: "Menstruasi",
   },
   {
-    id: 4,
+    id: "blog-autoimun",
     title: "Autoimun",
     image: Autoimun,
     alt: "Autoimun",
   },
   {
-    id: 5,
+    id: "blog-promil",
     title: "Promil",
     image: Promil,
     alt: "Promil",
   },
   {
-    id: 6,
+    id: "blog-kolesterol",
     title: "Kolesterol",
     image: Kolesterol,
     alt: "Kolesterol",
