@@ -33,8 +33,8 @@ export default {
 </script>
 
 <template>
-  <section class="px-5" :id="productId">
-    <h2 class="text-[1.75rem] leading-9 font-bold scroll-mt-20">
+  <section class="px-5">
+    <h2 class="text-[1.75rem] leading-9 font-bold scroll-mt-20" :id="productId">
       {{ subject }}
     </h2>
     <p class="font-thin">{{ description }}</p>

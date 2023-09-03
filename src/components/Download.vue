@@ -1,5 +1,5 @@
 <template>
-  <div class="px-5">
+  <div class="px-5 pt-8 border-t border-solid border-gray-200">
     <div
       class="bg-[#ecf7cf] rounded-xl p-5 flex flex-col justify-center items-center gap-y-4"
     >
@@ -24,9 +24,3 @@
     </div>
   </div>
 </template>
-
-<script>
-export default {};
-</script>
-
-<style></style>
