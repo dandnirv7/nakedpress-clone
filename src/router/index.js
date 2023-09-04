@@ -66,24 +66,6 @@ const routes = [
     },
   },
 
-  // {
-  //   path: "/blogs/stories/tagged/:id/:page?",
-  //   name: "BlogDetailPage",
-  //   component: () => import("../views/BlogsDetailPage.vue"),
-  //   meta: {
-  //     title:
-  //       "Cerita Sukses –Translation missing: id.general.meta.tags – nakedpress",
-  //   },
-  //   beforeEnter: (to, from, next) => {
-  //     if (!to.params.page) {
-  //       next({ ...to, params: { ...to.params, page: "1" } });
-  //     } else {
-  //       next();
-  //     }
-  //   },
-  //   props: true,
-  // },
-
   {
     path: "/blogs/stories/tagged/:id",
     name: "BlogDetailPage",
@@ -91,6 +73,24 @@ const routes = [
     meta: {
       title:
         "Cerita Sukses – Translation missing: id.general.meta.tags – nakedpress",
+    },
+    props: true,
+  },
+  {
+    path: "/blogs/stories",
+    name: "StoriesPage",
+    component: () => import("../views/StoriesPage.vue"),
+    meta: {
+      title: "Cerita Sukses – nakedpress",
+    },
+    props: true,
+  },
+  {
+    path: "/blogs/articles",
+    name: "ArticlesPage",
+    component: () => import("../views/ArticlesPage.vue"),
+    meta: {
+      title: "Artikel – nakedpress",
     },
     props: true,
   },

@@ -33,6 +33,7 @@ export const {
   useCholesterolBlogStore,
   usePaginationStore,
   useStoreBlogStore,
+  useDataStoriesStore,
 } = storeModules;
 
 export { pinia };
