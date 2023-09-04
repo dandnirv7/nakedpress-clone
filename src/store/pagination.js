@@ -20,5 +20,9 @@ export const usePaginationStore = defineStore("pagination", {
         this.currentPage = newPage;
       }
     },
+
+    setPostsPerPage(postPerPage) {
+      this.postsPerPage = postPerPage;
+    },
   },
 });

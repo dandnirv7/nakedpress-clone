@@ -16,7 +16,7 @@ export default {
     <h2 class="text-[28px] leading-9 font-bold">Inspirasi Sehat</h2>
     <div class="flex flex-wrap mt-6 mb-5 gap-x-4 gap-y-6">
       <div
-        v-for="inspiration in blogInspiration"
+        v-for="inspiration in blogInspiration.slice(0, 4)"
         :key="inspiration.id"
         class="w-32 h-[72px] bg-center bg-no-repeat bg-cover rounded-lg"
         :style="{ backgroundImage: `url(${inspiration.image})` }"
