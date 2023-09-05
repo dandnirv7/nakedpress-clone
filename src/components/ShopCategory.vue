@@ -1,14 +1,7 @@
-<script>
-import { useShopCategoryStore } from "../store";
-export default {
-  setup() {
-    const categoryStore = useShopCategoryStore();
+<script setup>
+import { useAllShowProductsStore } from "../store";
 
-    return {
-      shopCategory: categoryStore.shopCategory,
-    };
-  },
-};
+const shopCategory = useAllShowProductsStore().shopCategory;
 </script>
 
 <template>
@@ -17,7 +10,7 @@ export default {
     <p class="mt-3 text-[15px] leading-5">
       {{ shopCategory.description }}
     </p>
-    <div class="flex flex-wrap gap-4 mt-6">
+    <router-link to="/collections/all" class="flex flex-wrap gap-4 mt-6">
       <div
         v-for="category in shopCategory.category"
         :key="category.id"
@@ -29,6 +22,6 @@ export default {
           <p class="text-sm">{{ category.description }}</p>
         </div>
       </div>
-    </div>
+    </router-link>
   </div>
 </template>

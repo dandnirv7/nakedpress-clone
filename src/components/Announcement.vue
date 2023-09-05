@@ -1,6 +1,24 @@
+<script>
+export default {
+  data() {
+    return {
+      isHide: true,
+    };
+  },
+  methods: {
+    toggleHide() {
+      return (this.isHide = !this.isHide);
+    },
+  },
+};
+</script>
+
 <template>
-  <div class="flex flex-row items-center justify-center bg-[#d8eca4]">
-    <button class="py-4 pl-3">
+  <div
+    class="flex flex-row items-center justify-center bg-[#d8eca4]"
+    v-if="isHide"
+  >
+    <button class="my-4 ml-3" @click="toggleHide">
       <vue-feather type="x" stroke="#338023" size="20"></vue-feather>
     </button>
     <div class="py-4 pl-2">

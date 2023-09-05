@@ -1,7 +1,3 @@
-<script>
-export default {};
-</script>
-
 <template>
   <nav
     class="fixed bottom-0 flex flex-row items-center justify-center px-2.5 py-2 bg-white w-screen z-99"
@@ -35,7 +31,11 @@ export default {};
             fill="currentColor"
           ></path>
         </svg>
-        <span class="text-[10px] text-light">Home</span>
+        <span
+          class="text-[10px] text-light texxt-black"
+          :class="{ 'text-[#2f8d03]': $route.path === '/' }"
+          >Home</span
+        >
       </router-link>
       <router-link
         to="/collections/all"
@@ -47,7 +47,13 @@ export default {};
           stroke-width="1.5"
           :stroke="$route.path === '/collections/all' ? 'green' : 'black'"
         ></vue-feather>
-        <span class="text-[10px] text-light">Belanja</span>
+        <span
+          class="text-[10px] text-light"
+          :class="{
+            'text-[#2f8d03]': $route.path === '/collections/all',
+          }"
+          >Belanja</span
+        >
       </router-link>
       <router-link
         to="/collections/langganan"
@@ -59,7 +65,13 @@ export default {};
           stroke-width="1.5"
           :stroke="$route.path === '/collections/langganan' ? 'green' : 'black'"
         ></vue-feather>
-        <span class="text-[10px] text-light">Langganan</span>
+        <span
+          class="text-[10px] text-light"
+          :class="{
+            'text-[#2f8d03]': $route.path === '/collections/langganan',
+          }"
+          >Langganan</span
+        >
       </router-link>
       <router-link
         to="/blogs/homepage"
@@ -69,9 +81,13 @@ export default {};
           type="feather"
           size="24px"
           stroke-width="1.5"
-          :stroke="$route.path === '/blogs/homepage' ? 'green' : 'black'"
+          :stroke="$route.path.includes('/blogs') ? 'green' : 'black'"
         ></vue-feather>
-        <span class="text-[10px] text-light">Blog</span>
+        <span
+          class="text-[10px] text-light"
+          :class="{ 'text-[#2f8d03]': $route.path.includes('/blogs') }"
+          >Blog</span
+        >
       </router-link>
       <router-link
         to="/pages/bantuan"
@@ -94,7 +110,11 @@ export default {};
             :fill="$route.path === '/pages/bantuan' ? 'green' : 'black'"
           ></path>
         </svg>
-        <span class="text-[10px] text-light">Bantuan</span>
+        <span
+          class="text-[10px] text-light"
+          :class="{ 'text-[#2f8d03]': $route.path.includes('/pages/bantuan') }"
+          >Bantuan</span
+        >
       </router-link>
     </div>
   </nav>

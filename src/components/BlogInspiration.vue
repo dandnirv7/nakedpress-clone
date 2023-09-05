@@ -16,10 +16,15 @@ export default {
       class="flex flex-row justify-between"
     >
       <div class="w-32">
-        <img :src="blog.image" :alt="blog.alt" />
+        <router-link :to="'/blogs/stories/blog/' + blog.id">
+          <img :src="blog.image" alt="Title" />
+        </router-link>
       </div>
       <div class="flex flex-col gap-y-2 w-1/2">
-        <router-link to="/blogs/stories" class="font-semibold">
+        <router-link
+          :to="'/blogs/stories' + blog.id"
+          class="font-semibold hover:text-[#2f8d03]"
+        >
           {{ blog.title }}
         </router-link>
         <small class="text-sm font-light">{{ blog.date }}</small>

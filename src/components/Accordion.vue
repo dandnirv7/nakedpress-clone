@@ -1,12 +1,7 @@
 <script>
 import { TransitionGroup } from "vue";
 
-import {
-  useDeliveryAreaStore,
-  useFaqStore,
-  useFaqSubscriptionsStore,
-  useFaqStoreLocationStore,
-} from "../store";
+import { useAllShowProductsStore } from "../store";
 export default {
   components: {
     TransitionGroup,
@@ -23,13 +18,13 @@ export default {
   computed: {
     items() {
       if (this.storeType === "faq") {
-        return useFaqStore().faq;
+        return useAllShowProductsStore().faq;
       } else if (this.storeType === "delivery") {
-        return useDeliveryAreaStore().deliveryArea;
+        return useAllShowProductsStore().deliveryArea;
       } else if (this.storeType === "subscriptions") {
-        return useFaqSubscriptionsStore().faqSubscriptions;
+        return useAllShowProductsStore().faqSubscriptions;
       } else if (this.storeType === "location") {
-        return useFaqStoreLocationStore().faqStoreLocation;
+        return useAllShowProductsStore().faqStoreLocation;
       }
       return null;
     },
@@ -96,11 +91,14 @@ export default {
         class="border-b mb-2 hover:border-[#2f8d03] w-full h-full pb-3"
       >
         <div @click="toggleHide(item)">
-          <div class="flex flex-row items-center justify-between">
+          <div class="flex flex-row items-center space-x-4">
             <h3
-              class="font-semibold"
+              class="font-semibold text-sm w-full"
               :class="{
-                'text-[#2f8d03]': storeType !== 'faq' || !item.isHide,
+                'text-[#2f8d03]':
+                  storeType === 'delivery' ||
+                  storeType === 'location' ||
+                  !item.isHide,
               }"
             >
               {{ getItemTitle(item) }}

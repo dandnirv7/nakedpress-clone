@@ -38,12 +38,12 @@ export default {
     <Announcement />
     <div id="sticky-header" class="sticky top-0 z-50 bg-white">
       <div
-        class="sticky top-0 flex flex-row items-center justify-between px-6 py-3 bg-white z-99"
+        class="sticky top-0 flex flex-row items-center justify-around py-3 bg-white z-50"
       >
         <router-link to="/">
           <img src="../assets/Logo-2021.svg" alt="logo" />
         </router-link>
-        <div class="flex flex-row gap-6">
+        <div class="flex flex-row space-x-5">
           <vue-feather
             type="search"
             size="30px"

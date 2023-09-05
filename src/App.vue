@@ -30,10 +30,23 @@ export default {
 <template>
   <div>
     <Navbar />
-    <!-- <Announcement /> -->
     <router-view />
     <Download />
     <Footer />
-    <MobileNavigation />
+    <div id="mobile-navigation-container">
+      <MobileNavigation />
+    </div>
   </div>
 </template>
+
+<style>
+#mobile-navigation-container {
+  display: block;
+}
+
+@media screen and (min-width: 768px) {
+  #mobile-navigation-container {
+    display: none;
+  }
+}
+</style>

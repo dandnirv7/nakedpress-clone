@@ -1,20 +1,15 @@
-<script>
-import { useBlogInspirationStore } from "../store";
-export default {
-  setup() {
-    const BlogInspirationStore = useBlogInspirationStore();
+<script setup>
+import { useAllShowProductsStore } from "../store";
 
-    return {
-      blogInspiration: BlogInspirationStore.blogInspiration,
-    };
-  },
-};
+const blogInspiration = useAllShowProductsStore().blogInspirations;
 </script>
 
 <template>
   <div class="px-5 mt-5">
     <h2 class="text-[28px] leading-9 font-bold">Inspirasi Sehat</h2>
-    <div class="flex flex-wrap mt-6 mb-5 gap-x-4 gap-y-6">
+    <div
+      class="mt-6 grid grid-rows-2 grid-cols-2 place-items-center mb-5 gap-x-4 gap-y-5"
+    >
       <div
         v-for="inspiration in blogInspiration.slice(0, 4)"
         :key="inspiration.id"

@@ -1,32 +1,14 @@
-<script>
+<script setup>
+import { useAllShowProductsStore } from "../store";
 import CardFeatured from "../components/CardFeatured.vue";
 import Accordion from "../components/Accordion.vue";
 import ProductItems from "../components/ProductItems.vue";
-export default {
-  components: {
-    CardFeatured,
-    Accordion,
-    ProductItems,
-  },
-};
-</script>
 
-<script setup>
-import { toRefs } from "vue";
-import {
-  useWeek5SubscriptionsStore,
-  useDetoxSubscriptionsStore,
-} from "../store";
+const week5Category = useAllShowProductsStore().weeks5Programs;
+const detoxCategory = useAllShowProductsStore().detoxPrograms;
 
-const week5SubscriptionsStore = useWeek5SubscriptionsStore();
-const detoxSubscriptionsStore = useDetoxSubscriptionsStore();
-
-const { category: week5Category, subject: week5Subject } = toRefs(
-  week5SubscriptionsStore.Weeks5Programs
-);
-const { category: detoxCategory, subject: detoxSubject } = toRefs(
-  detoxSubscriptionsStore.DetoxPrograms
-);
+const week5Subject = "5 Weeks Program";
+const detoxSubject = "Paket Detox & Satuan";
 </script>
 <template>
   <div class="mb-10">
@@ -50,12 +32,14 @@ const { category: detoxCategory, subject: detoxSubject } = toRefs(
     <ProductItems
       :subject="week5Subject"
       :products="week5Category"
+      :alignItemsClass="'items-start'"
       buttonText="Pilih"
       class="my-10"
     />
     <ProductItems
       :subject="detoxSubject"
       :products="detoxCategory"
+      :alignItemsClass="'items-start'"
       buttonText="Pilih"
     />
 

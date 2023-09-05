@@ -1,10 +1,10 @@
 <script setup>
 import BlogInspiration from "../components/BlogInspiration.vue";
 import BlogCategory from "../components/BlogCategory.vue";
-import { useBlogArticleStore, useBlogInspirationStore } from "../store";
+import { useAllShowProductsStore } from "../store";
 
-const blogInspiration = useBlogInspirationStore().blogInspiration;
-const blogArticle = useBlogArticleStore().blogArticle;
+const blogInspiration = useAllShowProductsStore().blogInspirations;
+const blogArticle = useAllShowProductsStore().blogArticles;
 </script>
 
 <template>

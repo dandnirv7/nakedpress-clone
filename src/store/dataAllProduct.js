@@ -1,0 +1,40 @@
+import { defineStore } from "pinia";
+import {
+  allShowcaseProducts,
+  shopCategory,
+  blogCategory,
+  weightLossProgram,
+  subscriptionsOneLiter,
+  messageProcedure,
+  deliveryArea,
+  faq,
+  faqStoreLocation,
+  faqSubscriptions,
+  featuredSubscriptions,
+} from "./data";
+
+export const useAllShowProductsStore = defineStore("allShowProductsStore", {
+  state: () => ({
+    dailyKidsProduct: allShowcaseProducts.dailyKidsProduct,
+    dailyProduct330: allShowcaseProducts.dailyProduct330,
+    detoxProduct: allShowcaseProducts.detoxProduct,
+    merchandise: allShowcaseProducts.merchandise,
+    oneLiterProduct: allShowcaseProducts.oneLiterProduct,
+    subscriptions: allShowcaseProducts.subscriptions,
+    weeks5Programs: allShowcaseProducts.weeks5Programs,
+    detoxPrograms: allShowcaseProducts.detoxPrograms,
+    blogInspirations: allShowcaseProducts.blogInspirations,
+    blogArticles: allShowcaseProducts.blogArticles,
+    shopNeeds: allShowcaseProducts.shopNeeds,
+    shopCategory: shopCategory,
+    blogCategory: blogCategory,
+    weightLossProgram: weightLossProgram,
+    subscriptionsOneLiter: subscriptionsOneLiter,
+    messageProcedure: messageProcedure,
+    deliveryArea: deliveryArea,
+    faq: faq,
+    faqStoreLocation: faqStoreLocation,
+    faqSubscriptions: faqSubscriptions,
+    featuredSubscriptions: featuredSubscriptions,
+  }),
+});

@@ -1,43 +1,25 @@
 <script setup>
-import { onMounted, toRefs } from "vue";
-import {
-  useDailyKidsProductStore,
-  useDetoxProductStore,
-  useOneLiterProductStore,
-  useSubscriptionsStore,
-  useSubscriptionsOneLiterStore,
-  useWeightLossProgramStore,
-} from "../store";
+import { onMounted } from "vue";
+import { useAllShowProductsStore } from "../store/dataAllProduct";
 import ProductItems from "./ProductItems.vue";
 import CardItems from "./CardItems.vue";
-
-const dailyKidsProductStore = useDailyKidsProductStore();
-const detoxProductStore = useDetoxProductStore();
-const oneLiterProductStore = useOneLiterProductStore();
-const subscriptionsStore = useSubscriptionsStore();
-const subscriptionsOneLiterStore = useSubscriptionsOneLiterStore();
-const weightLossProgramStore = useWeightLossProgramStore();
 
 onMounted(() => {
   initFlowbite();
 });
 
-const { category: dailyKidsCategory, subject: dailyKidsSubject } = toRefs(
-  dailyKidsProductStore.dailyKidsProduct
-);
-const { category: detoxProductCategory } = toRefs(
-  detoxProductStore.detoxProduct
-);
-const { category: oneLiterProductCategory, subject: oneLiterProductSubject } =
-  toRefs(oneLiterProductStore.oneLiterProduct);
-const {
-  category: subscriptionsCategory,
-  subject: subscriptionsSubject,
-  description: subscriptionsDescription,
-} = toRefs(subscriptionsStore.subscriptions);
-const subscriptionsOneLiter = subscriptionsOneLiterStore.subscriptionsOneLiter;
-const weightLossProgram = weightLossProgramStore.weightLossProgram;
+const dailyKidsCategory = useAllShowProductsStore().dailyKidsProduct;
+const detoxProductCategory = useAllShowProductsStore().detoxProduct;
+const oneLiterProductCategory = useAllShowProductsStore().oneLiterProduct;
+const subscriptionsCategory = useAllShowProductsStore().subscriptions;
+const weightLossProgram = useAllShowProductsStore().weightLossProgram;
+const subscriptionsOneLiter = useAllShowProductsStore().subscriptionsOneLiter;
+
+const dailyKidsSubject = "New Mini! 200ml";
 const detoxProductSubject = "Best Sellers Detox";
+const oneLiterProductSubject = "Best Seller 1 Liter";
+const subscriptionsSubject = "Paket Langganan";
+const subscriptionsDescription = "Lebih hemat s/d 25%, ongkir cukup bayar 1x.";
 </script>
 
 <template>
@@ -45,6 +27,7 @@ const detoxProductSubject = "Best Sellers Detox";
     <ProductItems
       :subject="dailyKidsSubject"
       :products="dailyKidsCategory.slice(0, 4)"
+      :orderClass="'order-2'"
     />
     <ProductItems
       :subject="detoxProductSubject"

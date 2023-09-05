@@ -57,20 +57,12 @@ import Detox3X from "../assets/detox-3x.jpg";
 import Detox5X from "../assets/detox-5x.jpg";
 import Bottle40 from "../assets/bottle-40.jpg";
 
-import WeightLossProgram1 from "../assets/weight-loss-program-01.jpg";
-import WeightLossProgram2 from "../assets/weight-loss-program-02.jpg";
-import WeightLossProgram3 from "../assets/weight-loss-program-03.jpg";
-import WeightLossProgram4 from "../assets/weight-loss-program-04.jpg";
-import WeightLossProgram5 from "../assets/weight-loss-program-05.jpg";
+import MaagGerdJournal from "../assets/maag-gerd-journal.jpg";
+import Cholesterol5Weeks from "../assets/cholesterol-5-weeks.jpg";
+import WomensHealth5Weeks from "../assets/women_s-health-5-weeks.jpg";
+import MensHealth5Weeks from "../assets/men_s-health-5-weeks.jpg";
 
-import SubscriptionsOneLiter1 from "../assets/subscription-1liter-01.jpg";
-import SubscriptionsOneLiter2 from "../assets/subscription-1liter-02.jpg";
-import SubscriptionsOneLiter3 from "../assets/subscription-1liter-03.jpg";
-import SubscriptionsOneLiter4 from "../assets/subscription-1liter-04.jpg";
-
-import Storage from "../assets/message-procedure-storage.png";
-import Delivery from "../assets/message-procedure-delivery.png";
-import Message from "../assets/message-procedure-message.png";
+import Bottle24 from "../assets/bottle-24.jpg";
 
 import BlogInspiration1 from "../assets/blog-inspiration-01.jpg";
 import BlogInspiration2 from "../assets/blog-inspiration-02.jpg";
@@ -107,22 +99,28 @@ import Weeks5 from "../assets/5-weeks.png";
 import Daily1Liter from "../assets/daily-1-liter.png";
 import Mini200ML from "../assets/mini-200ml.jpg";
 
+import WeightLossProgram1 from "../assets/weight-loss-program-01.jpg";
+import WeightLossProgram2 from "../assets/weight-loss-program-02.jpg";
+import WeightLossProgram3 from "../assets/weight-loss-program-03.jpg";
+import WeightLossProgram4 from "../assets/weight-loss-program-04.jpg";
+import WeightLossProgram5 from "../assets/weight-loss-program-05.jpg";
+
+import SubscriptionsOneLiter1 from "../assets/subscription-1liter-01.jpg";
+import SubscriptionsOneLiter2 from "../assets/subscription-1liter-02.jpg";
+import SubscriptionsOneLiter3 from "../assets/subscription-1liter-03.jpg";
+import SubscriptionsOneLiter4 from "../assets/subscription-1liter-04.jpg";
+
+import Storage from "../assets/message-procedure-storage.png";
+import Delivery from "../assets/message-procedure-delivery.png";
+import Message from "../assets/message-procedure-message.png";
+
 import Weeks5Subscriptions from "../assets/icon-5-weeks-weight-loss-challenge.png";
 import Bottle40Subscriptions from "../assets/icon-langganan-40-botol.png";
 import Detox5XSubscriptions from "../assets/icon-langganan-detox-5-kali.png";
 
-import MaagGerdJournal from "../assets/maag-gerd-journal.jpg";
-import Cholesterol5Weeks from "../assets/cholesterol-5-weeks.jpg";
-import WomensHealth5Weeks from "../assets/women_s-health-5-weeks.jpg";
-import MensHealth5Weeks from "../assets/men_s-health-5-weeks.jpg";
-
-import Bottle24 from "../assets/bottle-24.jpg";
-
-export const dailyKidsProduct = {
-  subject: "NEW! Mini 200ml",
-  category: [
+export const allShowcaseProducts = {
+  dailyKidsProduct: [
     {
-      id: 1,
       image: DailyKids2,
       title: "Mini Box Set + Buku  Anak",
       description: "9 botol jus sayuran 200ml + Buku Cerita Anak",
@@ -130,7 +128,6 @@ export const dailyKidsProduct = {
       discountedPrice: 250000,
     },
     {
-      id: 2,
       image: DailyKids1,
       title: "Mini Box 200ml",
       description: "9 botol jus sayuran 200ml",
@@ -138,7 +135,6 @@ export const dailyKidsProduct = {
       discountedPrice: 240000,
     },
     {
-      id: 3,
       image: DailyKids3,
       title: "Pelangi di Piringmu",
       description: "Buku anak untuk belajar pentingnya sayuran",
@@ -146,247 +142,206 @@ export const dailyKidsProduct = {
       discountedPrice: 50000,
     },
     {
-      id: 4,
       image: DailyKids4,
       title: "Sweet Green 200ml",
       description: "Menguatkan sistem imun & pencernaan",
       originalPrice: 35000,
     },
     {
-      id: 5,
       image: DailyKids5,
       title: "Green Fairy 200ml",
       description: "Mengatasi masalah pencernaan",
       originalPrice: 35000,
     },
     {
-      id: 6,
       image: DailyKids6,
       title: "Rainforest 200ml",
       description: "Baik untuk masalah Asam Lambung & Sembelit",
       originalPrice: 35000,
     },
     {
-      id: 7,
       image: DailyKids7,
       title: "Green Grenade 200ml",
       description: "Bantu turunkan berat badan & Diabetes",
       originalPrice: 35000,
     },
     {
-      id: 8,
       image: DailyKids8,
       title: "Endless Summer 200ml",
       description: "Untuk kesehatan kulit & mata",
       originalPrice: 35000,
     },
     {
-      id: 9,
       image: DailyKids9,
       title: "Wild Flower 200ml",
       description: "Baik untuk PCOS & mens bermasalah",
       originalPrice: 35000,
     },
     {
-      id: 10,
       image: DailyKids10,
       title: "First Kiss 200ml",
       description: "Cocok diminum setelah olahraga",
       originalPrice: 35000,
     },
     {
-      id: 11,
       image: DailyKids11,
       title: "Summer Passion 200ml",
       description: "Baik untuk kolesterol & asam urat tinggi",
       originalPrice: 35000,
     },
     {
-      id: 12,
       image: DailyKids12,
       title: "Silk 200ml",
       description: "Bagus diminum setelah olahraga & atasi insomnia",
       originalPrice: 35000,
     },
   ],
-};
-export const dailyProduct330 = {
-  subject: "Daily 330ml",
-  category: [
+  dailyProduct330: [
     {
-      id: 1,
       image: DailyRainForest,
       title: "Rainforest",
       description: "Jus sayur dengan chia seed yang mengenyangkan",
       originalPrice: 45000,
     },
     {
-      id: 2,
       image: DailyGreenGrenade,
       title: "Green Grenade",
       description: "Jus hijau 6 sayur",
       originalPrice: 45000,
     },
     {
-      id: 3,
       image: DailyMansaMusa,
       title: "Mansa Musa",
       description: "Jus sayur untuk berbuka puasa",
       originalPrice: 45000,
     },
     {
-      id: 4,
       image: DailyGreenFairy,
       title: "Green Fairy",
       description: "Jus sayur manis aman untuk maag",
       originalPrice: 45000,
     },
     {
-      id: 5,
       image: DailySweetGreen,
       title: "Sweet Green",
       description: "Jus sayur hijau favorit",
       originalPrice: 45000,
     },
     {
-      id: 6,
       image: DailyLeanGreen,
       title: "Lean Green",
       description: "Jus sayur hijau pemula",
       originalPrice: 45000,
     },
     {
-      id: 7,
       image: DailyPureGreen,
       title: "Pure Green",
       description: "Jus untuk pencinta sayur",
       originalPrice: 45000,
     },
     {
-      id: 8,
       image: DailyCeleryJuice,
       title: "Celery Juice",
       description: "Jus 100% seledri murni",
       originalPrice: 45000,
     },
     {
-      id: 9,
       image: DailyCaraMia,
       title: "Cara Mia",
       description: "Jus lemon manis kesayangan",
       originalPrice: 45000,
     },
     {
-      id: 10,
       image: DailySkinnyDip,
       title: "Skinny Dip",
       description: "Jus lemon penuh vitamin",
       originalPrice: 45000,
     },
     {
-      id: 11,
       image: DailyUripUrup,
       title: "Jamu Urip Urup",
       description: "Jamu kunyit asam untuk sistem imun",
       originalPrice: 45000,
     },
     {
-      id: 12,
       image: DailyEndlessSummer,
       title: "Endless Summer",
       description: "Jus wortel favorit",
       originalPrice: 45000,
     },
     {
-      id: 13,
       image: DailyBlondie,
       title: "Blondie",
       description: "Jus wortel dan melon rendah kalori",
       originalPrice: 45000,
     },
     {
-      id: 13,
       image: DailySummerPassion,
       title: "SummerPassion",
       description: "Jus buah bit untuk pemula",
       originalPrice: 45000,
     },
     {
-      id: 14,
       image: DailyFirstKiss,
       title: "First Kiss",
       description: "Merah Manis Segar",
       originalPrice: 45000,
     },
     {
-      id: 15,
       image: DailyRedEarth,
       title: "Red Earth",
       description: "Jus bit tinggi antioksidan",
       originalPrice: 45000,
     },
     {
-      id: 16,
       image: DailySilk,
       title: "Silk",
       description: "Susu kacang mede vanila",
       originalPrice: 45000,
     },
     {
-      id: 17,
       image: DailyJade,
       title: "Jade",
       description: "Susu kacang mede pandan",
       originalPrice: 45000,
     },
     {
-      id: 18,
       image: DailySunrise,
       title: "Sunrise",
       description: "Susu kacang mede Thai Tea",
       originalPrice: 45000,
     },
     {
-      id: 19,
       image: DailyMoonlight,
       title: "Moonlight",
       description: "Susu oat yang mengenyangkan",
       originalPrice: 45000,
     },
   ],
-};
 
-export const merchandise = {
-  subject: "Merchandises",
-  category: [
+  merchandise: [
     {
-      id: 1,
       image: CoolerBag,
       title: "Cooler Bag",
       description: "Menjaga jus tetap dingin",
       originalPrice: 25000,
     },
     {
-      id: 2,
       image: Journal,
       title: "Jurnal 2023",
       description: "Jurnal untuk rencana 2023",
       originalPrice: 100000,
     },
   ],
-};
 
-export const detoxProduct = {
-  category: [
+  detoxProduct: [
     {
-      id: 1,
       image: DetoxMaagGerd,
       title: "Detox Maag GERD",
       description: "Untuk yang mau bebas Maag, GERD, atau LPR",
       originalPrice: 320000,
     },
     {
-      id: 2,
       image: DetoxOriginal,
       title: "Detox Original",
       description:
@@ -394,14 +349,12 @@ export const detoxProduct = {
       originalPrice: 320000,
     },
     {
-      id: 3,
       image: DetoxLowCalory,
       title: "Detox Low Calorie",
       description: "Untuk kamu yang mau menurunkan berat badan",
       originalPrice: 320000,
     },
     {
-      id: 4,
       image: DetoxWomenHealth,
       title: "Detox Women's Health",
       description:
@@ -409,7 +362,6 @@ export const detoxProduct = {
       originalPrice: 320000,
     },
     {
-      id: 5,
       image: DetoxMenHealth,
       title: "Detox Men's Health",
       description:
@@ -417,97 +369,77 @@ export const detoxProduct = {
       originalPrice: 320000,
     },
   ],
-};
 
-export const oneLiterProduct = {
-  subject: "Best 1 Liter Product",
-  category: [
+  oneLiterProduct: [
     {
-      id: 1,
       image: GreenGrenade,
       title: "Green Grenade 1 Liter",
       description: "Bantu turunkan berat badan & Diabetes",
       originalPrice: 115000,
     },
     {
-      id: 2,
       image: Rainforest,
       title: "Rainforest 1 Liter",
       description: "Baik untuk masalah Asam Lambung & sembelit",
       originalPrice: 115000,
     },
     {
-      id: 3,
       image: EndlessSummer,
       title: "Endless Summer 1 Liter",
       description: "Untuk kesehatan kulit & mata",
       originalPrice: 115000,
     },
     {
-      id: 4,
       image: Silk,
       title: "Silk 1 Liter",
       description: "Bagus diminum setelah olahraga & atasi insomnia",
       originalPrice: 115000,
     },
     {
-      id: 5,
       image: SweetGreen,
       title: "Sweet Green 1 Liter",
       description: "Menguatkan sistem imun & pencernaan",
       originalPrice: 115000,
     },
     {
-      id: 6,
       image: FirstKiss,
       title: "First Kiss 1 Liter",
       description: "Cocok diminum setelah olahraga",
       originalPrice: 115000,
     },
     {
-      id: 7,
       image: Celery,
       title: "Celery 1 Liter",
       description: "Bantu proses detoksifikasi tubuh & masalah jerawat",
       originalPrice: 115000,
     },
     {
-      id: 8,
       image: GreenFairy,
       title: "Green Fairy 1 Liter",
       description: "Mengatasi masalah pencernaan",
       originalPrice: 115000,
     },
     {
-      id: 9,
       image: WildFlower,
       title: "Wild Flower 1 Liter",
       description: "Baik untuk PCOS & mens bermasalah",
       originalPrice: 115000,
     },
     {
-      id: 10,
       image: SummerPassion,
       title: "Summer Passion 1 Liter",
       description: "Baik untuk kolesterol & asam urat tinggi",
       originalPrice: 115000,
     },
     {
-      id: 11,
       image: KurmaSeedGranola,
       title: "Kurma Seed Granola 400 gram",
       description: "Oat kaya serat yang bikin kenyang lama saat puasa",
       originalPrice: 45000,
     },
   ],
-};
-
-export const subscriptions = {
-  subject: "Paket Langganan",
-  description: "Lebih hemat s/d 25%, ongkir cukup bayar 1x.",
-  category: [
+  subscriptions: [
     {
-      id: 1,
       image: Detox5X,
       title: "Langganan Detox 5x",
       description: "5 paket detox, 5x antar | Cukup bayar ongkir 1x",
@@ -515,7 +447,6 @@ export const subscriptions = {
       discountedPrice: 1800000,
     },
     {
-      id: 2,
       image: Bottle40,
       title: "Langganan 40 Botol",
       description: "9 botol jus sayuran 200ml",
@@ -523,7 +454,6 @@ export const subscriptions = {
       discountedPrice: 1800000,
     },
     {
-      id: 3,
       image: Detox3X,
       title: "Langganan Detox 3x",
       description: "Buku anak untuk belajar pentingnya sayuran",
@@ -531,7 +461,273 @@ export const subscriptions = {
       discountedPrice: 1080000,
     },
   ],
+  weeks5Programs: [
+    {
+      image: WeightLossProgram1,
+      title: "5 Weeks Weight Loss Program",
+      description: "5 paket detox, 5x antar | Bonus Weight Loss Journal",
+      originalPrice: 1800000,
+      discountedPrice: 1500000,
+    },
+    {
+      image: MaagGerdJournal,
+      title: "5 Weeks Maag GERD Program",
+      description: "5 paket detox, 5x antar | Bonus Maag GERD Journal",
+      originalPrice: 1800000,
+      discountedPrice: 1500000,
+    },
+    {
+      image: Cholesterol5Weeks,
+      title: "5 Weeks Cholesterol Program",
+      description: "5 paket detox, 5x antar | Bonus Cholesterol Journal",
+      originalPrice: 1800000,
+      discountedPrice: 1500000,
+    },
+    {
+      image: WomensHealth5Weeks,
+      title: "5 Weeks Women's Health Program",
+      description: "5 paket detox, 5x antar | Bonus Women's Health Journal",
+      originalPrice: 1800000,
+      discountedPrice: 1500000,
+    },
+    {
+      image: MensHealth5Weeks,
+      title: "5 Weeks Men's Health Program",
+      description: "5 paket detox, 5x antar | Bonus Men's Health Journal",
+      originalPrice: 1800000,
+      discountedPrice: 1500000,
+    },
+  ],
+
+  detoxPrograms: [
+    {
+      image: Bottle40,
+      title: "Langganan 40 Botol",
+      description: "Maks. 10x antar | Kombinasi jus satuan",
+      originalPrice: 1800000,
+      discountedPrice: 1500000,
+    },
+    {
+      image: Detox3X,
+      title: "Langganan Detox 3x",
+      description: "Maks. 3x antar",
+      originalPrice: 1080000,
+      discountedPrice: 950000,
+    },
+    {
+      image: Bottle24,
+      title: "Langganan 24 Botol",
+      description: "Maks. 6x antar | Kombinasi jus satuan",
+      originalPrice: 1080000,
+      discountedPrice: 950000,
+    },
+    {
+      image: Detox5X,
+      title: "Langganan Detox 5x",
+      description: "5 paket detox, 5x antar | Cukup bayar ongkir 1x",
+      originalPrice: 1800000,
+      discountedPrice: 1500000,
+    },
+    {
+      image: SubscriptionsOneLiter1,
+      title: "Langganan 1 Liter 15 Botol",
+      description: "Maks. 10x antar | Cukup bayar ongkir 1x",
+      originalPrice: 1725000,
+      discountedPrice: 1500000,
+    },
+  ],
+  blogInspirations: [
+    {
+      title: "Konstipasi. Bahaya atau Enggak?",
+      image: BlogInspiration1,
+      alt: "Konstipasi",
+      date: "09 Aug 2023",
+    },
+    {
+      title:
+        "Nadiyah, Akhirnya Perjuanganku Melawan GERD Dari Kecil Berakhir Setelah Detox",
+      image: BlogInspiration2,
+      alt: "Nadiyah",
+      date: "20 Mar 2023",
+    },
+    {
+      title: "Meilyana, Kirain  Asam Lambung Biasa. Gak Taunya GERD",
+      image: BlogInspiration3,
+      alt: "Meilyana",
+      date: "20 Mar 2023",
+    },
+    {
+      title: "Sasa, Setiap Bulan Selalu Ngerasain Drama PMS",
+      image: BlogInspiration4,
+      alt: "Sasa",
+      date: "20 Mar 2023",
+    },
+    {
+      title: "Diya, Ada Asam Lambung Bukan Berarti Gak Bisa Ibadah Puasa",
+      image: BlogInspiration5,
+      alt: "Diya",
+      date: "17 Mar 2023",
+    },
+    {
+      title: "Regita, GERD Kambuh Terus, Sampai Gak Mempan Diobatin Pake Obat",
+      image: BlogInspiration6,
+      alt: "Regita",
+      date: "13 Mar 2023",
+    },
+  ],
+
+  blogArticles: [
+    {
+      title: "Konstipasi. Bahaya atau Enggak?",
+      image: BlogInspiration1,
+      date: "09 Aug 2023",
+    },
+    {
+      title: "Susah BAB Bisa Bikin Masalah Kesehatan Yang Lebih Banyak",
+      image: BlogArticle2,
+      date: "09 Aug 2023",
+    },
+    {
+      title: "Cara Pakai Paket Detox Biar Kesehatan Pria Meningkat",
+      image: BlogArticle3,
+      date: "24 Jul 2023",
+    },
+    {
+      title:
+        "Putri, Semenjak Minum Jus Sayuran Setiap Hari, BAB Aku Lancar Kembali",
+      image: BlogArticle4,
+      date: "03 Jul 2023",
+    },
+    {
+      title: "Makin Tua Makin Susah Turun Berat Badan. Mitos atau Fakta?",
+      image: BlogArticle5,
+      date: "12 Jun 2023",
+    },
+    {
+      title: "Adit, Dulu Sering Jajan Sembarangan Bikin sakit Kepala.",
+      image: BlogArticle6,
+      date: "05 Jun 2023",
+    },
+  ],
+
+  shopNeeds: [
+    {
+      id: 1,
+      image: Detox,
+      title: "Detox",
+    },
+    {
+      id: 2,
+      image: WeightLoss,
+      title: "Weight Loss",
+    },
+    {
+      id: 3,
+      image: MaagGerd,
+      title: "Maag GERD",
+    },
+    {
+      id: 4,
+      image: Cholesterol,
+      title: "Cholesterol",
+    },
+    {
+      id: 5,
+      image: WomenHealth,
+      title: "Women's Health",
+    },
+    {
+      id: 6,
+      image: MenHealth,
+      title: "Men's Health",
+    },
+    {
+      id: 7,
+      image: HealthySkin,
+      title: "Healthy Skin",
+    },
+    {
+      id: 8,
+      image: Autoimmune,
+      title: "Autoimmune",
+    },
+    {
+      id: 9,
+      image: Constipation,
+      title: "Constipation",
+    },
+  ],
 };
+
+export const shopCategory = {
+  subject: "Shop by Category",
+  description: "Belanja untuk membuat kamu semakin sehat setiap hari.",
+  category: [
+    {
+      id: 1,
+      image: Detox1Day,
+      title: "Detox 1 Day",
+      description: "Puasa jus sayuran 1 hari seminggu",
+    },
+    {
+      id: 2,
+      image: Weeks5,
+      title: "5 Weeks",
+      description: "Puasa 1x seminggu dalam 5 minggu",
+    },
+    {
+      id: 3,
+      image: Daily1Liter,
+      title: "Daily 1 Liter",
+      description: "Jus 1 liter untuk harian",
+    },
+    {
+      id: 4,
+      image: Mini200ML,
+      title: "Mini 200ml",
+      description: "",
+    },
+  ],
+};
+
+export const blogCategory = [
+  {
+    id: "blog-maaggerd",
+    title: "Maag GERD",
+    image: MaagGerdBlog,
+    alt: "Maag GERD",
+  },
+  {
+    id: "blog-obesitas",
+    title: "Obesitas",
+    image: Obesitas,
+    alt: "Obesitas",
+  },
+  {
+    id: "blog-menstruasi",
+    title: "Menstruasi",
+    image: Menstruasi,
+    alt: "Menstruasi",
+  },
+  {
+    id: "blog-autoimun",
+    title: "Autoimun",
+    image: Autoimun,
+    alt: "Autoimun",
+  },
+  {
+    id: "blog-promil",
+    title: "Promil",
+    image: Promil,
+    alt: "Promil",
+  },
+  {
+    id: "blog-kolesterol",
+    title: "Kolesterol",
+    image: Kolesterol,
+    alt: "Kolesterol",
+  },
+];
 
 export const weightLossProgram = [
   {
@@ -568,7 +764,6 @@ export const weightLossProgram = [
 
 export const subscriptionsOneLiter = [
   {
-    id: 1,
     title: "Langganan 1 Liter 15 Botol",
     description: "Maks. 10x antar | Cukup bayar ongkir 1x",
     originalPrice: 1725000,
@@ -619,131 +814,6 @@ export const messageProcedure = [
   },
 ];
 
-export const blogInspiration = [
-  {
-    id: 1,
-    title: "Konstipasi. Bahaya atau Enggak?",
-    image: BlogInspiration1,
-    alt: "Konstipasi",
-    date: "09 Aug 2023",
-  },
-  {
-    id: 2,
-    title:
-      "Nadiyah, Akhirnya Perjuanganku Melawan GERD Dari Kecil Berakhir Setelah Detox",
-    image: BlogInspiration2,
-    alt: "Nadiyah",
-    date: "20 Mar 2023",
-  },
-  {
-    id: 3,
-    title: "Meilyana, Kirain  Asam Lambung Biasa. Gak Taunya GERD",
-    image: BlogInspiration3,
-    alt: "Meilyana",
-    date: "20 Mar 2023",
-  },
-  {
-    id: 4,
-    title: "Sasa, Setiap Bulan Selalu Ngerasain Drama PMS",
-    image: BlogInspiration4,
-    alt: "Sasa",
-    date: "20 Mar 2023",
-  },
-  {
-    id: 5,
-    title: "Diya, Ada Asam Lambung Bukan Berarti Gak Bisa Ibadah Puasa",
-    image: BlogInspiration5,
-    alt: "Diya",
-    date: "17 Mar 2023",
-  },
-  {
-    id: 6,
-    title: "Regita, GERD Kambuh Terus, Sampai Gak Mempan Diobatin Pake Obat",
-    image: BlogInspiration6,
-    alt: "Regita",
-    date: "13 Mar 2023",
-  },
-];
-
-export const blogArticle = [
-  {
-    id: 1,
-    title: "Konstipasi. Bahaya atau Enggak?",
-    image: BlogInspiration1,
-    date: "09 Aug 2023",
-  },
-  {
-    id: 2,
-    title: "Susah BAB Bisa Bikin Masalah Kesehatan Yang Lebih Banyak",
-    image: BlogArticle2,
-    date: "09 Aug 2023",
-  },
-  {
-    id: 3,
-    title: "Cara Pakai Paket Detox Biar Kesehatan Pria Meningkat",
-    image: BlogArticle3,
-    date: "24 Jul 2023",
-  },
-  {
-    id: 4,
-    title:
-      "Putri, Semenjak Minum Jus Sayuran Setiap Hari, BAB Aku Lancar Kembali",
-    image: BlogArticle4,
-    date: "03 Jul 2023",
-  },
-  {
-    id: 5,
-    title: "Makin Tua Makin Susah Turun Berat Badan. Mitos atau Fakta?",
-    image: BlogArticle5,
-    date: "12 Jun 2023",
-  },
-  {
-    id: 6,
-    title: "Adit, Dulu Sering Jajan Sembarangan Bikin sakit Kepala.",
-    image: BlogArticle6,
-    date: "05 Jun 2023",
-  },
-];
-
-export const blogCategory = [
-  {
-    id: "blog-maaggerd",
-    title: "Maag GERD",
-    image: MaagGerdBlog,
-    alt: "Maag GERD",
-  },
-  {
-    id: "blog-obesitas",
-    title: "Obesitas",
-    image: Obesitas,
-    alt: "Obesitas",
-  },
-  {
-    id: "blog-menstruasi",
-    title: "Menstruasi",
-    image: Menstruasi,
-    alt: "Menstruasi",
-  },
-  {
-    id: "blog-autoimun",
-    title: "Autoimun",
-    image: Autoimun,
-    alt: "Autoimun",
-  },
-  {
-    id: "blog-promil",
-    title: "Promil",
-    image: Promil,
-    alt: "Promil",
-  },
-  {
-    id: "blog-kolesterol",
-    title: "Kolesterol",
-    image: Kolesterol,
-    alt: "Kolesterol",
-  },
-];
-
 export const deliveryArea = {
   title: "Area Pengantaran",
   area: [
@@ -779,90 +849,6 @@ export const deliveryArea = {
       subdistrict:
         "Kecamatan Bekasi Barat, Bekasi Selatan, Bekasi Utara, Jatisampurna, Medan Satria, Pondok Gede, Pondok Melati",
       isHide: true,
-    },
-  ],
-};
-
-export const shopCategory = {
-  subject: "Shop by Category",
-  description: "Belanja untuk membuat kamu semakin sehat setiap hari.",
-  category: [
-    {
-      id: 1,
-      image: Detox1Day,
-      title: "Detox 1 Day",
-      description: "Puasa jus sayuran 1 hari seminggu",
-    },
-    {
-      id: 2,
-      image: Weeks5,
-      title: "5 Weeks",
-      description: "Puasa 1x seminggu dalam 5 minggu",
-    },
-    {
-      id: 3,
-      image: Daily1Liter,
-      title: "Daily 1 Liter",
-      description: "Jus 1 liter untuk harian",
-    },
-    {
-      id: 4,
-      image: Mini200ML,
-      title: "Mini 200ml",
-      description: "",
-    },
-  ],
-};
-
-export const shopNeeds = {
-  subject: "Shop by Needs",
-  description:
-    "Belanja dari kebutuhan kamu untuk mendukung kesehatan maksimal kamu.",
-  category: [
-    {
-      id: 1,
-      image: Detox,
-      title: "Detox",
-    },
-    {
-      id: 2,
-      image: WeightLoss,
-      title: "Weight Loss",
-    },
-    {
-      id: 3,
-      image: MaagGerd,
-      title: "Maag GERD",
-    },
-    {
-      id: 4,
-      image: Cholesterol,
-      title: "Cholesterol",
-    },
-    {
-      id: 5,
-      image: WomenHealth,
-      title: "Women's Health",
-    },
-    {
-      id: 6,
-      image: MenHealth,
-      title: "Men's Health",
-    },
-    {
-      id: 7,
-      image: HealthySkin,
-      title: "Healthy Skin",
-    },
-    {
-      id: 8,
-      image: Autoimmune,
-      title: "Autoimmune",
-    },
-    {
-      id: 9,
-      image: Constipation,
-      title: "Constipation",
     },
   ],
 };
@@ -1093,94 +1079,17 @@ export const featuredSubscriptions = {
   ],
 };
 
-export const Weeks5Programs = {
-  subject: "5 Weeks Program",
-  category: [
-    {
-      id: 1,
-      image: WeightLossProgram1,
-      title: "5 Weeks Weight Loss Program",
-      description: "5 paket detox, 5x antar | Bonus Weight Loss Journal",
-      originalPrice: 1800000,
-      discountedPrice: 1500000,
-    },
-    {
-      id: 2,
-      image: MaagGerdJournal,
-      title: "5 Weeks Maag GERD Program",
-      description: "5 paket detox, 5x antar | Bonus Maag GERD Journal",
-      originalPrice: 1800000,
-      discountedPrice: 1500000,
-    },
-    {
-      id: 3,
-      image: Cholesterol5Weeks,
-      title: "5 Weeks Cholesterol Program",
-      description: "5 paket detox, 5x antar | Bonus Cholesterol Journal",
-      originalPrice: 1800000,
-      discountedPrice: 1500000,
-    },
-    {
-      id: 4,
-      image: WomensHealth5Weeks,
-      title: "5 Weeks Women's Health Program",
-      description: "5 paket detox, 5x antar | Bonus Women's Health Journal",
-      originalPrice: 1800000,
-      discountedPrice: 1500000,
-    },
-    {
-      id: 5,
-      image: MensHealth5Weeks,
-      title: "5 Weeks Men's Health Program",
-      description: "5 paket detox, 5x antar | Bonus Men's Health Journal",
-      originalPrice: 1800000,
-      discountedPrice: 1500000,
-    },
-  ],
+const idFormat = (title) => {
+  const id = title
+    .replace(/[^\w\s]/g, "")
+    .toLowerCase()
+    .replace(/\s+/g, "-");
+
+  return id;
 };
 
-export const DetoxPrograms = {
-  subject: "Paket Detox & Satuan",
-  category: [
-    {
-      id: 1,
-      image: Bottle40,
-      title: "Langganan 40 Botol",
-      description: "Maks. 10x antar | Kombinasi jus satuan",
-      originalPrice: 1800000,
-      discountedPrice: 1500000,
-    },
-    {
-      id: 2,
-      image: Detox3X,
-      title: "Langganan Detox 3x",
-      description: "Maks. 3x antar",
-      originalPrice: 1080000,
-      discountedPrice: 950000,
-    },
-    {
-      id: 3,
-      image: Bottle24,
-      title: "Langganan 24 Botol",
-      description: "Maks. 6x antar | Kombinasi jus satuan",
-      originalPrice: 1080000,
-      discountedPrice: 950000,
-    },
-    {
-      id: 4,
-      image: Detox5X,
-      title: "Langganan Detox 5x",
-      description: "5 paket detox, 5x antar | Cukup bayar ongkir 1x",
-      originalPrice: 1800000,
-      discountedPrice: 1500000,
-    },
-    {
-      id: 5,
-      image: SubscriptionsOneLiter1,
-      title: "Langganan 1 Liter 15 Botol",
-      description: "Maks. 10x antar | Cukup bayar ongkir 1x",
-      originalPrice: 1725000,
-      discountedPrice: 1500000,
-    },
-  ],
-};
+for (const category in allShowcaseProducts) {
+  allShowcaseProducts[category].forEach((item) => {
+    return (item.id = idFormat(item.title));
+  });
+}

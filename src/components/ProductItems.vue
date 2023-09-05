@@ -23,6 +23,11 @@ export default {
       type: String,
       required: false,
     },
+    orderClass: String,
+    alignItemsClass: {
+      type: String,
+      default: "items-center",
+    },
   },
   methods: {
     formatPrice(price) {
@@ -41,26 +46,29 @@ export default {
     <div
       v-for="product in products"
       :key="product.id"
-      class="flex flex-row items-center pt-5 pr-4"
+      class="flex flex-row pt-5 pr-4"
+      :class="alignItemsClass"
     >
-      <div>
+      <router-link :to="'/products/' + product.id">
         <img
           :src="product.image"
           alt="Product Image"
           class="h-auto rounded-xl max-w-[100px] object-center"
         />
-      </div>
+      </router-link>
       <div class="flex flex-col items-start justify-center pl-4 gap-y-1">
         <router-link
-          to="/products"
+          :to="'/products/' + product.id"
           :class="['pr-8 text-xl font-semibold', textColor]"
         >
           {{ product.title }}
         </router-link>
         <p class="font-light">{{ product.description }}</p>
-        <div class="flex flex-row items-center justify-center pr-2.5 gap-x-2">
-          <div>
-            <p class="text-red-900">
+        <div
+          class="flex flex-row items-center justify-between w-full pr-2.5 gap-x-2"
+        >
+          <div class="flex flex-col">
+            <p class="text-red-900" :class="orderClass">
               {{
                 product.discountedPrice
                   ? formatPrice(product.discountedPrice)

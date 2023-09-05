@@ -3,7 +3,7 @@
     <div
       v-for="post in displayedPosts"
       :key="post.id"
-      class="flex flex-row justify-between gap-x-4 mb-5 blog-post"
+      class="flex flex-row items-start justify-around w-full mb-5 gap-x-4 blog-post"
     >
       <div class="w-32">
         <img :src="post.image" alt="Title" class="rounded-lg" loading="lazy" />

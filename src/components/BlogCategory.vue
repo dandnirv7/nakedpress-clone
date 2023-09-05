@@ -1,11 +1,11 @@
 <script>
-import { useBlogCategoryStore } from "../store";
+import { useAllShowProductsStore } from "../store";
 export default {
   props: {
     subject: String,
   },
   setup() {
-    const blogCategoryStore = useBlogCategoryStore();
+    const blogCategoryStore = useAllShowProductsStore();
     return {
       blogCategory: blogCategoryStore.blogCategory,
     };

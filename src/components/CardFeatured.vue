@@ -1,3 +1,12 @@
+<script setup>
+import { useAllShowProductsStore } from "../store";
+const featuredSubscriptions = useAllShowProductsStore().featuredSubscriptions;
+
+const formatPrice = (price) => {
+  return `Rp ${price.toLocaleString("id-ID")}`;
+};
+</script>
+
 <template>
   <div class="flex flex-col items-center mt-10 gap-y-4">
     <h1 class="text-[1.75rem] leading-9 font-bold">
@@ -53,22 +62,3 @@
     </div>
   </div>
 </template>
-
-<script>
-import { useFeaturedSubscriptionsStore } from "../store";
-
-export default {
-  setup() {
-    const featuredSubscriptions = useFeaturedSubscriptionsStore();
-
-    return {
-      featuredSubscriptions: featuredSubscriptions.featuredSubscriptions,
-    };
-  },
-  methods: {
-    formatPrice(price) {
-      return `Rp ${price.toLocaleString("id-ID")}`;
-    },
-  },
-};
-</script>

@@ -1,11 +1,14 @@
 <script>
 import { onMounted, ref } from "vue";
 import { initFlowbite } from "flowbite";
-import { useWeightLossProgramStore } from "../store";
+import { useAllShowProductsStore } from "../store";
 
 export default {
+  props: {
+    programs: Array,
+  },
   setup() {
-    const weightLossProgramStore = useWeightLossProgramStore();
+    const weightLossProgramStore = useAllShowProductsStore().weightLossProgram;
     const weightLossProgram = ref(weightLossProgramStore.weightLossProgram);
     const activeIndex = ref(0);
 
@@ -17,9 +20,6 @@ export default {
       weightLossProgram,
       activeIndex,
     };
-  },
-  props: {
-    programs: Array,
   },
 };
 </script>

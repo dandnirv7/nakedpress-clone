@@ -1,14 +1,7 @@
-<script>
-import { useShopNeedStore } from "../store";
-export default {
-  setup() {
-    const needStore = useShopNeedStore();
+<script setup>
+import { useAllShowProductsStore } from "../store";
 
-    return {
-      needs: needStore.shopNeeds,
-    };
-  },
-};
+const needs = useAllShowProductsStore().shopNeeds;
 </script>
 
 <template>

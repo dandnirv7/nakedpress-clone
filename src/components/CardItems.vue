@@ -1,7 +1,6 @@
 <script>
 import { onMounted } from "vue";
 import ImageCarousel from "./ImageCarousel.vue";
-import { useWeightLossProgramStore } from "../store";
 export default {
   props: {
     programs: Array,
@@ -15,15 +14,9 @@ export default {
     };
   },
   setup() {
-    const weightLossProgramStore = useWeightLossProgramStore();
-
     onMounted(() => {
       initFlowbite();
     });
-
-    return {
-      weightLossProgram: weightLossProgramStore.weightLossProgram,
-    };
   },
 
   methods: {

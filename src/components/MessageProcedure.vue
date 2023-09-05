@@ -1,14 +1,7 @@
-<script>
-import { useMessageProcedureStore } from "../store";
-export default {
-  setup() {
-    const messageProcedureStore = useMessageProcedureStore();
+<script setup>
+import { useAllShowProductsStore } from "../store";
 
-    return {
-      procedures: messageProcedureStore.messageProcedure,
-    };
-  },
-};
+const procedures = useAllShowProductsStore().messageProcedure;
 </script>
 
 <template>
